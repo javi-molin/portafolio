@@ -41,8 +41,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/ddn_f1346.webp",
-       "w": 1200,
-       "h": 1600,
+       "w": 1800,
+       "h": 2400,
        "nombre": "Arco de entrada y pasillo de franjas",
        "formato": "Ripley Costanera Center, 3 de agosto de 2025",
        "alt": "Arco de entrada del Día del Niño con franjas rosadas, naranjas y amarillas, seguido por un pasillo de piso a rayas dentro de la tienda."
@@ -55,8 +55,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/d_formas.webp",
-       "w": 1600,
-       "h": 1180,
+       "w": 2400,
+       "h": 1770,
        "nombre": "Formas del sistema",
        "formato": "Arcos, ondas, estrellas y cubos",
        "alt": "Formas del sistema. Arcos, ondas, estrellas y cubos"
@@ -100,8 +100,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/ddn_plano2.webp",
-       "w": 1132,
-       "h": 1376,
+       "w": 1116,
+       "h": 1278,
        "nombre": "Planta del evento",
        "formato": "Zonas, medidas y circulación",
        "alt": "Planta del evento. Zonas, medidas y circulación",
@@ -118,8 +118,8 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/dia-del-nino/ddn_f1354.webp",
-       "w": 1200,
-       "h": 1600,
+       "w": 1800,
+       "h": 2400,
        "nombre": "Torre de cubos instalada",
        "formato": "Foto de montaje",
        "alt": "Torre de cubos instalada. Foto de montaje",
@@ -135,8 +135,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/ddn_arco.webp",
-       "w": 738,
-       "h": 709,
+       "w": 2140,
+       "h": 2051,
        "nombre": "Frente del arco",
        "formato": "Original de impresión",
        "alt": "Frente del arco. Original de impresión"
@@ -161,8 +161,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/ddn_f1353.webp",
-       "w": 1600,
-       "h": 1200,
+       "w": 2400,
+       "h": 1800,
        "nombre": "Counter de popcorn instalado",
        "formato": "Foto de montaje",
        "alt": "Counter de popcorn instalado. Foto de montaje"
@@ -174,8 +174,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/ddn_f1350.webp",
-       "w": 1600,
-       "h": 1200,
+       "w": 2400,
+       "h": 1800,
        "nombre": "Rincón creativo",
        "formato": "Foto de montaje",
        "alt": "Rincón creativo. Foto de montaje"
@@ -190,16 +190,16 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/dia-del-nino/ddn_f1349.webp",
-       "w": 1200,
-       "h": 1600,
+       "w": 1800,
+       "h": 2400,
        "nombre": "Mesas",
        "formato": "Foto de montaje",
        "alt": "Mesas. Foto de montaje"
       },
       {
        "src": "img1/dia-del-nino/ddn_f1355.webp",
-       "w": 1200,
-       "h": 1600,
+       "w": 1800,
+       "h": 2400,
        "nombre": "Recorrido",
        "formato": "Foto de montaje",
        "alt": "Recorrido. Foto de montaje"
@@ -264,8 +264,8 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/dia-del-nino/ddn_ev_oso.webp",
-       "w": 1200,
-       "h": 1600,
+       "w": 1800,
+       "h": 2400,
        "nombre": "La pieza central",
        "formato": "Oso, onda y arcos",
        "alt": "El oso gigante sobre una tarima, entre el arco de lunares, la onda rosada y la columna de franjas."
@@ -304,16 +304,16 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/d_pop.webp",
-       "w": 1600,
-       "h": 745,
+       "w": 2400,
+       "h": 1117,
        "nombre": "Counter de popcorn",
        "formato": "Frente",
        "alt": "Counter de popcorn. Frente"
       },
       {
        "src": "img1/dia-del-nino/d_pop2.webp",
-       "w": 772,
-       "h": 1600,
+       "w": 1159,
+       "h": 2400,
        "nombre": "Counter de popcorn",
        "formato": "Lateral",
        "alt": "Counter de popcorn. Lateral"
@@ -333,24 +333,24 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/d_donut.webp",
-       "w": 1600,
-       "h": 1600,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Tarjeta de canje",
        "formato": "Donut",
        "alt": "Tarjeta de canje. Donut"
       },
       {
        "src": "img1/dia-del-nino/d_jug.webp",
-       "w": 1600,
-       "h": 1600,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Tarjeta de canje",
        "formato": "Juguete sorpresa",
        "alt": "Tarjeta de canje. Juguete sorpresa"
       },
       {
        "src": "img1/dia-del-nino/d_pinta.webp",
-       "w": 1600,
-       "h": 1094,
+       "w": 2400,
+       "h": 1641,
        "nombre": "Tarjeta",
        "formato": "Actividad de pintura",
        "alt": "Tarjeta. Actividad de pintura"
@@ -362,8 +362,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/dia-del-nino/ddn_hood2.webp",
-       "w": 1600,
-       "h": 1067,
+       "w": 2400,
+       "h": 1601,
        "nombre": "Polerón de staff",
        "formato": "Maqueta",
        "alt": "Polerón de staff. Maqueta"
@@ -378,8 +378,8 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/dia-del-nino/ddn_hood3.webp",
-       "w": 1600,
-       "h": 1067,
+       "w": 2400,
+       "h": 1601,
        "nombre": "Polerón",
        "formato": "Variante",
        "alt": "Polerón. Variante"
@@ -456,8 +456,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/c_frame.webp",
-       "w": 1600,
-       "h": 677,
+       "w": 2400,
+       "h": 1015,
        "nombre": "Frame de prensa",
        "formato": "Fotomontaje",
        "alt": "Frame de prensa. Fotomontaje"
@@ -473,40 +473,40 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/s_csl_01.webp",
-       "w": 1600,
-       "h": 321,
+       "w": 3200,
+       "h": 641,
        "nombre": "Lienzo colgante",
        "formato": "500 × 100 cm",
        "alt": "Lienzo colgante. 500 × 100 cm"
       },
       {
        "src": "img1/campeones-sin-limites/c_b6.webp",
-       "w": 1600,
-       "h": 533,
+       "w": 3200,
+       "h": 1067,
        "nombre": "Bastidor de marca",
        "formato": "300 × 100 cm",
        "alt": "Bastidor de marca. 300 × 100 cm"
       },
       {
        "src": "img1/campeones-sin-limites/c_b1.webp",
-       "w": 1600,
-       "h": 533,
+       "w": 3200,
+       "h": 1067,
        "nombre": "Bastidor de auspiciadores",
        "formato": "300 × 100 cm",
        "alt": "Bastidor de auspiciadores. 300 × 100 cm"
       },
       {
        "src": "img1/campeones-sin-limites/s_csl_07.webp",
-       "w": 890,
-       "h": 1600,
+       "w": 1334,
+       "h": 2400,
        "nombre": "Tótem",
        "formato": "100 × 180 cm",
        "alt": "Tótem. 100 × 180 cm"
       },
       {
        "src": "img1/campeones-sin-limites/s_csl_05.webp",
-       "w": 667,
-       "h": 2000,
+       "w": 800,
+       "h": 2400,
        "nombre": "Bandera vela",
        "formato": "100 × 300 cm",
        "alt": "Bandera vela. 100 × 300 cm"
@@ -594,16 +594,16 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/c_kv1.webp",
-       "w": 1600,
-       "h": 697,
+       "w": 2400,
+       "h": 1046,
        "nombre": "Key visual de la campaña en Metro",
        "formato": "Formato horizontal",
        "alt": "Key visual: una nadadora con gorra y antiparras, las letras de Ripley de fondo y la frase \"No somos una historia, hacemos historia\"."
       },
       {
        "src": "img1/campeones-sin-limites/c_ht1.webp",
-       "w": 800,
-       "h": 1600,
+       "w": 1200,
+       "h": 2400,
        "nombre": "Tótem de mano",
        "formato": "Metro",
        "alt": "Tótem de mano. Metro"
@@ -618,32 +618,32 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/c_kv3.webp",
-       "w": 1600,
-       "h": 698,
+       "w": 2400,
+       "h": 1046,
        "nombre": "Key visual",
        "formato": "Tenis de mesa",
        "alt": "Key visual. Tenis de mesa"
       },
       {
        "src": "img1/campeones-sin-limites/c_kv4.webp",
-       "w": 1600,
-       "h": 698,
+       "w": 2400,
+       "h": 1046,
        "nombre": "Key visual",
        "formato": "Tenis de mesa",
        "alt": "Key visual. Tenis de mesa"
       },
       {
        "src": "img1/campeones-sin-limites/c_kv5.webp",
-       "w": 1600,
-       "h": 698,
+       "w": 2400,
+       "h": 1046,
        "nombre": "Key visual",
        "formato": "Básquetbol en silla de ruedas",
        "alt": "Key visual. Básquetbol en silla de ruedas"
       },
       {
        "src": "img1/campeones-sin-limites/c_kv6.webp",
-       "w": 1600,
-       "h": 698,
+       "w": 2400,
+       "h": 1046,
        "nombre": "Key visual",
        "formato": "Atletismo",
        "alt": "Key visual. Atletismo"
@@ -658,24 +658,24 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/c_v1.webp",
-       "w": 1600,
-       "h": 245,
+       "w": 3200,
+       "h": 489,
        "nombre": "Franja de vagón",
        "formato": "Atletismo",
        "alt": "Franja de vagón. Atletismo"
       },
       {
        "src": "img1/campeones-sin-limites/c_v2.webp",
-       "w": 1600,
-       "h": 245,
+       "w": 3200,
+       "h": 489,
        "nombre": "Franja de vagón",
        "formato": "Natación",
        "alt": "Franja de vagón. Natación"
       },
       {
        "src": "img1/campeones-sin-limites/c_v3.webp",
-       "w": 1600,
-       "h": 245,
+       "w": 3200,
+       "h": 489,
        "nombre": "Franja de vagón",
        "formato": "Tenis de mesa",
        "alt": "Franja de vagón. Tenis de mesa"
@@ -711,8 +711,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/c_floor.webp",
-       "w": 1600,
-       "h": 1440,
+       "w": 2400,
+       "h": 2160,
        "nombre": "Pista atlética",
        "formato": "Vinilo de piso",
        "alt": "Pista atlética. Vinilo de piso"
@@ -740,24 +740,24 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/campeones-sin-limites/csl_avion.webp",
-       "w": 1280,
-       "h": 960,
+       "w": 2400,
+       "h": 1800,
        "nombre": "Avión LATAM",
        "formato": "Propuesta de ploteo",
        "alt": "Avión LATAM. Propuesta de ploteo"
       },
       {
        "src": "img1/campeones-sin-limites/c_mail.webp",
-       "w": 1125,
-       "h": 1600,
+       "w": 1688,
+       "h": 2400,
        "nombre": "Mailing de agradecimiento",
        "formato": "Teletón y Ripley",
        "alt": "Mailing de agradecimiento. Teletón y Ripley"
       },
       {
        "src": "img1/campeones-sin-limites/f_gccsl.webp",
-       "w": 1600,
-       "h": 1236,
+       "w": 2400,
+       "h": 1855,
        "nombre": "Gift cards del evento",
        "formato": "Pliego de impresión",
        "alt": "Gift cards del evento. Pliego de impresión"
@@ -808,8 +808,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/toys-r-us/t_std.webp",
-       "w": 1600,
-       "h": 1600,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Save the date de la inauguración",
        "formato": "Post 1:1",
        "alt": "Save the date de Toys\"R\"Us en Ripley: franjas rosadas y rojas, el logo de la juguetería, la jirafa Geoffrey y el oso Ripley asomándose por los bordes, y la fecha 8.11.25."
@@ -830,8 +830,8 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/toys-r-us/tru_std2.webp",
-       "w": 1175,
-       "h": 1175,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Save the date",
        "formato": "Variante",
        "alt": "Save the date. Variante"
@@ -862,8 +862,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/toys-r-us/t_ig.webp",
-       "w": 1600,
-       "h": 1600,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Invitación",
        "formato": "Genérica",
        "alt": "Invitación. Genérica"
@@ -878,16 +878,16 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/toys-r-us/t_ir.webp",
-       "w": 1600,
-       "h": 1600,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Invitación",
        "formato": "Retiro",
        "alt": "Invitación. Retiro"
       },
       {
        "src": "img1/toys-r-us/t_id.webp",
-       "w": 1214,
-       "h": 1600,
+       "w": 1821,
+       "h": 2400,
        "nombre": "Invitación",
        "formato": "Formato vertical",
        "alt": "Invitación. Formato vertical"
@@ -939,8 +939,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/toys-r-us/s_tru_01.webp",
-       "w": 501,
-       "h": 2000,
+       "w": 801,
+       "h": 3200,
        "nombre": "Tallímetro",
        "formato": "0,90 a 2,00 m",
        "alt": "Tallímetro. 0,90 a 2,00 m"
@@ -985,16 +985,16 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/toys-r-us/tru_palet.webp",
-       "w": 1600,
-       "h": 1036,
+       "w": 2400,
+       "h": 1553,
        "nombre": "Vale Palettas",
        "formato": "Impreso",
        "alt": "Vale Palettas. Impreso"
       },
       {
        "src": "img1/toys-r-us/t_cucu.webp",
-       "w": 1600,
-       "h": 984,
+       "w": 2400,
+       "h": 1476,
        "nombre": "Cucurucho",
        "formato": "Troquel",
        "alt": "Cucurucho. Troquel"
@@ -1038,19 +1038,45 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/toys-r-us/t_gc.webp",
-       "w": 1400,
-       "h": 862,
+       "w": 2400,
+       "h": 1477,
        "nombre": "Gift card $20.000",
        "formato": "Evento",
        "alt": "Gift card $20.000. Evento"
       },
       {
        "src": "img1/toys-r-us/t_fila.webp",
-       "w": 1000,
-       "h": 1000,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Número de fila",
        "formato": "20 × 20 cm",
        "alt": "Número de fila. 20 × 20 cm"
+      }
+     ]
+    },
+    {
+     "titulo": "Animaciones",
+     "texto": [
+      "Piezas animadas para redes y pantallas, armadas sobre la gráfica de la campaña."
+     ],
+     "piezas": [
+      {
+       "src": "img1/toys-r-us/tru_fondo.webp",
+       "w": 1920,
+       "h": 960,
+       "nombre": "Fondo continuo",
+       "formato": "Video 4072 × 2036 px",
+       "alt": "Animación horizontal: Geoffrey y el oso Ripley recorren una ciudad con parque y edificios, con el cartel de bienvenida a Toys\"R\"Us.",
+       "video": "video/tru-fondo.mp4"
+      },
+      {
+       "src": "img1/toys-r-us/tru_geo.webp",
+       "w": 1080,
+       "h": 1920,
+       "nombre": "Story de inauguración",
+       "formato": "Story animada 9:16",
+       "alt": "Story animada con Geoffrey en la ciudad, que anuncia la juguetería en Ripley Mall Marina.",
+       "video": "video/tru-geo.mp4"
       }
      ]
     },
@@ -1062,24 +1088,24 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img1/toys-r-us/t_bb.webp",
-       "w": 900,
-       "h": 1600,
+       "w": 1350,
+       "h": 2400,
        "nombre": "Inscripción",
        "formato": "Story",
        "alt": "Inscripción. Story"
       },
       {
        "src": "img1/toys-r-us/t_bbg.webp",
-       "w": 1244,
-       "h": 1600,
+       "w": 1867,
+       "h": 2400,
        "nombre": "Aviso a participantes",
        "formato": "Post",
        "alt": "Aviso a participantes. Post"
       },
       {
        "src": "img1/toys-r-us/t_bbs.webp",
-       "w": 1245,
-       "h": 1600,
+       "w": 1867,
+       "h": 2400,
        "nombre": "Aviso a suplentes",
        "formato": "Post",
        "alt": "Aviso a suplentes. Post"
@@ -1099,8 +1125,8 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img1/toys-r-us/tru_gcv.webp",
-       "w": 1080,
-       "h": 1350,
+       "w": 1920,
+       "h": 2400,
        "nombre": "Mailing",
        "formato": "Los primeros 100 reciben gift card",
        "alt": "Mailing. Los primeros 100 reciben gift card"
@@ -1212,16 +1238,16 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img2/new-romantic/s_lanz_01.webp",
-       "w": 862,
-       "h": 1600,
+       "w": 1294,
+       "h": 2400,
        "nombre": "Spavaldi Milano",
        "formato": "WhatsApp",
        "alt": "Spavaldi Milano. WhatsApp"
       },
       {
        "src": "img2/new-romantic/s_lanz_04v.webp",
-       "w": 480,
-       "h": 1008,
+       "w": 720,
+       "h": 1504,
        "nombre": "María Paz Blanco × Marquis",
        "formato": "Pantalla animada",
        "alt": "María Paz Blanco × Marquis. Pantalla animada",
@@ -1229,16 +1255,16 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img2/new-romantic/s_lanz_03.webp",
-       "w": 1414,
-       "h": 1600,
+       "w": 2120,
+       "h": 2400,
        "nombre": "María Paz Blanco × Marquis",
        "formato": "WhatsApp",
        "alt": "María Paz Blanco × Marquis. WhatsApp"
       },
       {
        "src": "img2/new-romantic/m_marq.webp",
-       "w": 1600,
-       "h": 1280,
+       "w": 2400,
+       "h": 1920,
        "nombre": "Marquis",
        "formato": "Exclusivo para clientas gold, silver y plus",
        "alt": "Marquis. Exclusivo para clientas gold, silver y plus"
@@ -1253,8 +1279,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/new-romantic/m_beach.webp",
-       "w": 1543,
-       "h": 1600,
+       "w": 2315,
+       "h": 2400,
        "nombre": "Beach Club",
        "formato": "Clientas gold",
        "alt": "Beach Club. Clientas gold"
@@ -1293,32 +1319,32 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/new-romantic/m_flip.webp",
-       "w": 733,
-       "h": 1800,
+       "w": 977,
+       "h": 2400,
        "nombre": "Flip your Denim",
        "formato": "Pendón",
        "alt": "Flip your Denim. Pendón"
       },
       {
        "src": "img2/new-romantic/m_ganador.webp",
-       "w": 900,
-       "h": 1600,
+       "w": 1350,
+       "h": 2400,
        "nombre": "Flip your Denim",
        "formato": "Ganador",
        "alt": "Flip your Denim. Ganador"
       },
       {
        "src": "img2/new-romantic/s_moda_01.webp",
-       "w": 1280,
-       "h": 1600,
+       "w": 1920,
+       "h": 2400,
        "nombre": "Relaxed Denim",
        "formato": "Post 4:5",
        "alt": "Relaxed Denim. Post 4:5"
       },
       {
        "src": "img2/new-romantic/s_moda_02.webp",
-       "w": 1341,
-       "h": 1600,
+       "w": 2011,
+       "h": 2400,
        "nombre": "Vainilla & Mocha",
        "formato": "Invitación interna",
        "alt": "Vainilla & Mocha. Invitación interna"
@@ -1401,8 +1427,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ventas-privadas/v_trebol.webp",
-       "w": 1217,
-       "h": 1600,
+       "w": 1825,
+       "h": 2400,
        "nombre": "Invitación Venta Privada Mall Plaza Trébol",
        "formato": "WhatsApp",
        "alt": "Invitación Venta Privada Mall Plaza Trébol. WhatsApp"
@@ -1417,8 +1443,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ventas-privadas/s_vp_04.webp",
-       "w": 800,
-       "h": 1600,
+       "w": 1201,
+       "h": 2400,
        "nombre": "Pendón Quilpué Day",
        "formato": "100 × 200 cm",
        "alt": "Pendón Quilpué Day. 100 × 200 cm"
@@ -1446,48 +1472,48 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ventas-privadas/v_chillan.webp",
-       "w": 818,
-       "h": 1800,
+       "w": 1091,
+       "h": 2400,
        "nombre": "Chillán Day",
        "formato": "Pendón",
        "alt": "Chillán Day. Pendón"
       },
       {
        "src": "img2/ventas-privadas/v_quilpue.webp",
-       "w": 801,
-       "h": 1600,
+       "w": 1201,
+       "h": 2400,
        "nombre": "Quilpué Day",
        "formato": "Pendón",
        "alt": "Quilpué Day. Pendón"
       },
       {
        "src": "img2/ventas-privadas/v_curico.webp",
-       "w": 721,
-       "h": 1800,
+       "w": 961,
+       "h": 2400,
        "nombre": "Curicó Day",
        "formato": "Pendón",
        "alt": "Curicó Day. Pendón"
       },
       {
        "src": "img2/ventas-privadas/v_conce.webp",
-       "w": 721,
-       "h": 1800,
+       "w": 961,
+       "h": 2400,
        "nombre": "Conce Day",
        "formato": "Pendón",
        "alt": "Conce Day. Pendón"
       },
       {
        "src": "img2/ventas-privadas/v_marinad.webp",
-       "w": 721,
-       "h": 1800,
+       "w": 961,
+       "h": 2400,
        "nombre": "Marina Days",
        "formato": "Pendón",
        "alt": "Marina Days. Pendón"
       },
       {
        "src": "img2/ventas-privadas/v_valpo.webp",
-       "w": 818,
-       "h": 1800,
+       "w": 1091,
+       "h": 2400,
        "nombre": "Valparaíso Day",
        "formato": "Pendón",
        "alt": "Valparaíso Day. Pendón"
@@ -1502,43 +1528,52 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ventas-privadas/v_mar1.webp",
-       "w": 1350,
-       "h": 1600,
+       "w": 2026,
+       "h": 2400,
        "nombre": "Venta Privada Marina",
        "formato": "Post",
        "alt": "Venta Privada Marina. Post"
       },
       {
        "src": "img2/ventas-privadas/v_mar2.webp",
-       "w": 1219,
-       "h": 1600,
+       "w": 1828,
+       "h": 2400,
        "nombre": "Venta Privada Marina",
        "formato": "Story",
        "alt": "Venta Privada Marina. Story"
       },
       {
        "src": "img2/ventas-privadas/v_marpen.webp",
-       "w": 909,
-       "h": 2000,
+       "w": 1091,
+       "h": 2400,
        "nombre": "Venta Exclusiva Marina",
        "formato": "Pendón",
        "alt": "Venta Exclusiva Marina. Pendón"
       },
       {
        "src": "img2/ventas-privadas/v_marpan.webp",
-       "w": 606,
-       "h": 1800,
+       "w": 809,
+       "h": 2400,
        "nombre": "Venta Exclusiva Marina",
        "formato": "Pantalla",
        "alt": "Venta Exclusiva Marina. Pantalla"
       },
       {
        "src": "img2/ventas-privadas/v_iqq.webp",
-       "w": 568,
-       "h": 1800,
+       "w": 1010,
+       "h": 3200,
        "nombre": "Iquique Day",
        "formato": "Pantalla",
        "alt": "Iquique Day. Pantalla"
+      },
+      {
+       "src": "img2/ventas-privadas/vp_navidad.webp",
+       "w": 1920,
+       "h": 1080,
+       "nombre": "Cupón de Navidad",
+       "formato": "Video 16:9",
+       "alt": "Video horizontal «Me fascina la Navidad»: retiro en tienda y cupones de descuento en vestuario.",
+       "video": "video/vp-navidad.mp4"
       }
      ]
     },
@@ -1547,16 +1582,16 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ventas-privadas/v_cup1.webp",
-       "w": 1057,
-       "h": 1600,
+       "w": 1586,
+       "h": 2400,
        "nombre": "Cupón Mall Plaza",
        "formato": "Barra de descuentos",
        "alt": "Cupón Mall Plaza. Barra de descuentos"
       },
       {
        "src": "img2/ventas-privadas/v_cup2.webp",
-       "w": 1600,
-       "h": 1600,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Cupones de descuento",
        "formato": "Post",
        "alt": "Cupones de descuento. Post"
@@ -1626,8 +1661,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/me-fascinan-las-sandalias/s_sand_02v.webp",
-       "w": 480,
-       "h": 848,
+       "w": 720,
+       "h": 1280,
        "nombre": "Pantalla vertical",
        "formato": "Andén 9:16",
        "alt": "Pantalla vertical. Andén 9:16",
@@ -1683,8 +1718,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ripley-beauty/r_stdc.webp",
-       "w": 1053,
-       "h": 1600,
+       "w": 1579,
+       "h": 2400,
        "nombre": "Save the date, inauguración Costanera Center",
        "formato": "Story",
        "alt": "Save the date de Ripley Beauty: modelo sosteniendo un labial rojo sobre fondo rosado y el título en bloque."
@@ -1700,8 +1735,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ripley-beauty/r_clic.webp",
-       "w": 1156,
-       "h": 1600,
+       "w": 1735,
+       "h": 2400,
        "nombre": "Clientas",
        "formato": "Con banda vertical",
        "alt": "Clientas. Con banda vertical"
@@ -1750,27 +1785,36 @@ window.PORTAFOLIO = {
       },
       {
        "src": "img2/ripley-beauty/r_master.webp",
-       "w": 900,
-       "h": 1600,
+       "w": 1350,
+       "h": 2400,
        "nombre": "Masterclass",
        "formato": "Story",
        "alt": "Masterclass. Story"
       },
       {
        "src": "img2/ripley-beauty/r_shak.webp",
-       "w": 900,
-       "h": 1600,
+       "w": 1350,
+       "h": 2400,
        "nombre": "Sorteo de fragancias",
        "formato": "Story",
        "alt": "Sorteo de fragancias. Story"
       },
       {
        "src": "img2/ripley-beauty/r_temuco.webp",
-       "w": 1600,
-       "h": 919,
+       "w": 2400,
+       "h": 1379,
        "nombre": "Renovación Portal Temuco",
        "formato": "Pantalla horizontal",
        "alt": "Renovación Portal Temuco. Pantalla horizontal"
+      },
+      {
+       "src": "img2/ripley-beauty/rb_fucsia.webp",
+       "w": 2560,
+       "h": 346,
+       "nombre": "Fucsia de Shakira, animado",
+       "formato": "Video panorámico 7820 × 1058 px",
+       "alt": "Animación panorámica de Fucsia de Shakira: la cantante, el frasco del perfume y el logo de Ripley Beauty sobre fondo fucsia.",
+       "video": "video/rb-fucsia.mp4"
       }
      ]
     },
@@ -1779,24 +1823,24 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ripley-beauty/r_labial.webp",
-       "w": 1600,
-       "h": 1001,
+       "w": 2400,
+       "h": 1501,
        "nombre": "Día del labial",
        "formato": "Cartel",
        "alt": "Día del labial. Cartel"
       },
       {
        "src": "img2/ripley-beauty/r_lgc.webp",
-       "w": 1600,
-       "h": 1420,
+       "w": 2400,
+       "h": 2130,
        "nombre": "Lancôme",
        "formato": "Gift card ganadora",
        "alt": "Lancôme. Gift card ganadora"
       },
       {
        "src": "img2/ripley-beauty/r_caja.webp",
-       "w": 1600,
-       "h": 1200,
+       "w": 2400,
+       "h": 1800,
        "nombre": "Tus must de primavera",
        "formato": "Caja",
        "alt": "Tus must de primavera. Caja"
@@ -1808,16 +1852,16 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/ripley-beauty/r_clov.webp",
-       "w": 1255,
-       "h": 1600,
+       "w": 1883,
+       "h": 2400,
        "nombre": "CLO",
        "formato": "Vespucio, 5 de diciembre",
        "alt": "CLO. Vespucio, 5 de diciembre"
       },
       {
        "src": "img2/ripley-beauty/r_clot.webp",
-       "w": 1255,
-       "h": 1600,
+       "w": 1883,
+       "h": 2400,
        "nombre": "CLO",
        "formato": "Trébol, 9 de diciembre",
        "alt": "CLO. Trébol, 9 de diciembre"
@@ -2066,8 +2110,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img2/fiestas-patrias/f_rappi.webp",
-       "w": 875,
-       "h": 1600,
+       "w": 1312,
+       "h": 2400,
        "nombre": "Ripley en Rappi",
        "formato": "Post",
        "alt": "Ripley en Rappi. Post"
@@ -2103,6 +2147,15 @@ window.PORTAFOLIO = {
        "nombre": "Día del cambio climático",
        "formato": "Story 4 de 4",
        "alt": "Día del cambio climático. Story 4 de 4"
+      },
+      {
+       "src": "img2/fiestas-patrias/rappi.webp",
+       "w": 1080,
+       "h": 1920,
+       "nombre": "Ripley × Rappi",
+       "formato": "Story animada 9:16",
+       "alt": "Story animada de Ripley y Rappi con compras navideñas entregadas en 60 minutos.",
+       "video": "video/rappi.mp4"
       }
      ]
     }
@@ -2152,6 +2205,15 @@ window.PORTAFOLIO = {
        "nombre": "Counter producido",
        "formato": "Foto antes de instalar",
        "alt": "Counter producido. Foto antes de instalar"
+      },
+      {
+       "src": "img3/activaciones/sh_reparalab.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "Limpieza gratis de zapatillas",
+       "formato": "Post animado 4:5",
+       "alt": "Post animado: «Cuida y regala vida a tus zapatillas favoritas» y la invitación a limpiarlas gratis en Ripley.",
+       "video": "video/sh-reparalab.mp4"
       }
      ]
     },
@@ -2160,16 +2222,16 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/activaciones/a_cust.webp",
-       "w": 1600,
-       "h": 1564,
+       "w": 2400,
+       "h": 2346,
        "nombre": "Customization spot",
        "formato": "Post",
        "alt": "Customization spot. Post"
       },
       {
        "src": "img3/activaciones/a_limp.webp",
-       "w": 1600,
-       "h": 1564,
+       "w": 2400,
+       "h": 2346,
        "nombre": "Limpieza gratis",
        "formato": "Post",
        "alt": "Limpieza gratis. Post"
@@ -2189,8 +2251,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/activaciones/a_ch.webp",
-       "w": 1212,
-       "h": 1600,
+       "w": 1818,
+       "h": 2400,
        "nombre": "Puma Challenge",
        "formato": "Post",
        "alt": "Pieza Puma Challenge: zapatillas rosadas y calcetines granate sobre fondo oscuro, con el título en blanco."
@@ -2234,6 +2296,15 @@ window.PORTAFOLIO = {
        "nombre": "Trionda",
        "formato": "Story",
        "alt": "Trionda. Story"
+      },
+      {
+       "src": "img3/activaciones/tri_mundial.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "Experiencia mundialera",
+       "formato": "Post animado 4:5",
+       "alt": "Post animado con un jugador y la pelota del Mundial: personalización gratis en Ripley Costanera Center.",
+       "video": "video/tri-mundial.mp4"
       }
      ]
     },
@@ -2242,16 +2313,16 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/activaciones/a_th2.webp",
-       "w": 1280,
-       "h": 1600,
+       "w": 1920,
+       "h": 2400,
        "nombre": "Mejor del Café con Thomas",
        "formato": "Pantalla, Temuco",
        "alt": "Mejor del Café con Thomas. Pantalla, Temuco"
       },
       {
        "src": "img3/activaciones/a_th1.webp",
-       "w": 900,
-       "h": 1600,
+       "w": 1350,
+       "h": 2400,
        "nombre": "Thomas",
        "formato": "Story",
        "alt": "Thomas. Story"
@@ -2271,6 +2342,15 @@ window.PORTAFOLIO = {
        "nombre": "Volkano",
        "formato": "Post",
        "alt": "Volkano. Post"
+      },
+      {
+       "src": "img3/activaciones/volkano.webp",
+       "w": 1080,
+       "h": 1920,
+       "nombre": "Llegó Volkano a Ripley",
+       "formato": "Story animada 9:16",
+       "alt": "Story animada con el logo de Volkano y productos de la marca sobre fondo oscuro.",
+       "video": "video/volkano.mp4"
       }
      ]
     },
@@ -2279,32 +2359,32 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/activaciones/a_lin.webp",
-       "w": 1280,
-       "h": 1600,
+       "w": 1920,
+       "h": 2400,
        "nombre": "Maison Linett",
        "formato": "Invitación",
        "alt": "Maison Linett. Invitación"
       },
       {
        "src": "img3/activaciones/a_taller1.webp",
-       "w": 1067,
-       "h": 1600,
+       "w": 1601,
+       "h": 2400,
        "nombre": "Taller de velas",
        "formato": "Flyer",
        "alt": "Taller de velas. Flyer"
       },
       {
        "src": "img3/activaciones/a_taller2.webp",
-       "w": 1067,
-       "h": 1600,
+       "w": 1601,
+       "h": 2400,
        "nombre": "La Loca de las Velas",
        "formato": "Flyer",
        "alt": "La Loca de las Velas. Flyer"
       },
       {
        "src": "img3/activaciones/a_tymo.webp",
-       "w": 1231,
-       "h": 1600,
+       "w": 1847,
+       "h": 2400,
        "nombre": "Tymo Beauty",
        "formato": "Lanzamiento",
        "alt": "Tymo Beauty. Lanzamiento"
@@ -2319,8 +2399,8 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/activaciones/s_pdv_01.webp",
-       "w": 1417,
-       "h": 1417,
+       "w": 2400,
+       "h": 2400,
        "nombre": "Edición exclusiva",
        "formato": "Sticker Ø 12 cm",
        "alt": "Edición exclusiva. Sticker Ø 12 cm"
@@ -2409,7 +2489,7 @@ window.PORTAFOLIO = {
     {
      "titulo": "Identidad y manual de marca",
      "texto": [
-      "Un manual corto y una biblioteca para que Muralia arme sus piezas sola: isotipo, siete colores de obra, dos tipografías, 124 vectores (iconos, franjas, marcos, señalética de plano y viñetas), dos patrones y 52 fondos de pantalla.",
+      "Un manual corto para que Muralia arme sus piezas sola: isotipo, siete colores de obra y dos tipografías. Desde ahí sale la biblioteca gráfica y los fondos de pantalla.",
       "Cuatro láminas, una por decisión: qué es la marca, cómo se usa el logo, con qué colores y con qué tipografías. Es lo que se le pasa a un proveedor o a una imprenta antes de empezar."
      ],
      "piezas": [
@@ -2452,6 +2532,28 @@ window.PORTAFOLIO = {
        "nombre": "Tipografía",
        "formato": "Bebas Neue y Archivo",
        "alt": "Tipografía. Bebas Neue y Archivo"
+      }
+     ]
+    },
+    {
+     "titulo": "Biblioteca gráfica: 124 vectores",
+     "texto": [
+      "Iconos, franjas, marcos y símbolos de plano dibujados con las mismas reglas del logo: línea de grosor constante, esquinas rectas y vocabulario de obra.",
+      "La entregué como una página interactiva: se cambia el color con la paleta de Muralia, se busca por nombre y se copia cada vector en SVG o PNG."
+     ],
+     "enlace": {
+      "url": "muralia/biblioteca.html",
+      "texto": "Abrir la biblioteca interactiva"
+     },
+     "piezas": [
+      {
+       "src": "img3/muralia/lib-construccion.webp",
+       "w": 2400,
+       "h": 998,
+       "nombre": "Construcción del icono",
+       "formato": "Grilla 48 × 48 · trazo 3",
+       "alt": "Tres iconos de Muralia (fuego, placa de yeso cartón y casa) dibujados sobre su grilla de 48 × 48 con el área segura marcada.",
+       "nota": "Todos los iconos salen de la misma grilla: 48 × 48, trazo de 3, esquinas rectas y remates cuadrados."
       },
       {
        "src": "img3/muralia/lib-iconos.webp",
@@ -2463,21 +2565,79 @@ window.PORTAFOLIO = {
        "nota": "Los productos, las propiedades técnicas, los sectores donde Muralia trabaja y los datos de contacto, dibujados con la misma regla: grilla de 48 × 48, trazo de 3, esquinas rectas y remates cuadrados."
       },
       {
-       "src": "img3/muralia/lib-franjas.webp",
-       "w": 2000,
-       "h": 1345,
-       "nombre": "Franjas, marcos y contenedores",
-       "formato": "37 vectores SVG",
-       "alt": "Las 23 franjas y los 14 marcos de la biblioteca de Muralia.",
-       "nota": "Lo que arma la página: bandas para cabeceras y pies, marcos para encuadrar fotos y datos, símbolos tomados del dibujo técnico de arquitectura, y las viñetas y flechas de las listas."
+       "src": "img3/muralia/lib-sistema-color.webp",
+       "w": 2400,
+       "h": 1476,
+       "nombre": "Un vector, cinco combinaciones",
+       "formato": "Paleta de obra",
+       "alt": "Seis iconos de Muralia repetidos en cinco combinaciones de color: grafito, arcilla, papel sobre grafito, papel sobre arcilla y yeso sobre musgo.",
+       "nota": "Cada vector es de un solo color, así que funciona en cualquiera de las combinaciones de la paleta sin redibujarlo."
       },
       {
-       "src": "img3/muralia/lib-senaletica.webp",
+       "src": "img3/muralia/lib-franjas-23.webp",
+       "w": 2400,
+       "h": 2282,
+       "nombre": "Franjas",
+       "formato": "23 vectores · 480 × 48",
+       "alt": "Las 23 franjas de Muralia: aparejo, lana, montantes, achurados, cota, zigzag, perforado, chevrones y otras.",
+       "nota": "Bandas para cabeceras, pies de página, separadores de sección y bordes de piezas."
+      },
+      {
+       "src": "img3/muralia/lib-marcos.webp",
+       "w": 2400,
+       "h": 932,
+       "nombre": "Marcos y contenedores",
+       "formato": "14 vectores · 240 × 160",
+       "alt": "Los 14 marcos y contenedores de Muralia: esquineras, marco doble, cartela de plano, etiqueta, sellos y ventana para foto."
+      },
+      {
+       "src": "img3/muralia/lib-plano.webp",
+       "w": 2400,
+       "h": 852,
+       "nombre": "Señalética de plano y marcadores",
+       "formato": "16 vectores · 64 × 64",
+       "alt": "Símbolos del dibujo técnico de arquitectura de Muralia: eje, nivel de piso, corte, norte, cotas, muro cortafuego y marcadores numerados."
+      },
+      {
+       "src": "img3/muralia/lib-vinetas.webp",
+       "w": 2400,
+       "h": 1194,
+       "nombre": "Viñetas, flechas y separadores",
+       "formato": "17 vectores",
+       "alt": "Viñetas cuadradas, flechas, chevrón, signos y cinco separadores horizontales de Muralia."
+      }
+     ]
+    },
+    {
+     "titulo": "52 fondos de pantalla",
+     "texto": [
+      "Fondos sin logo para historias, celulares, escritorio y presentaciones. Cada uno existe en vertical 1080 × 1920 y horizontal 1920 × 1080, y usa solo los colores de la marca."
+     ],
+     "piezas": [
+      {
+       "src": "img3/muralia/lib-fondos.webp",
        "w": 2000,
-       "h": 1145,
-       "nombre": "Señalética de plano, viñetas y marcadores",
-       "formato": "33 vectores SVG",
-       "alt": "Símbolos de dibujo técnico, viñetas, flechas, separadores y marcadores de Muralia."
+       "h": 1144,
+       "nombre": "Fondos de pantalla",
+       "formato": "52 fondos · 1080 × 1920",
+       "alt": "Hoja de contactos con los 52 fondos de pantalla de Muralia.",
+       "nota": "Cincuenta y dos fondos sin logo, cada uno en vertical 1080 × 1920 y horizontal 1920 × 1080: aparejos, achurados, cortes de muro, ejes de plano, ondas acústicas y curvas de temperatura."
+      },
+      {
+       "src": "img3/muralia/lib-fondos-v.webp",
+       "w": 2400,
+       "h": 900,
+       "nombre": "Fondos verticales",
+       "formato": "Selección de 6 · 1080 × 1920",
+       "alt": "Seis fondos verticales de Muralia: aparejo gigante, lana monumental, marcos concéntricos, conductividad térmica, llama gigante y escalera."
+      },
+      {
+       "src": "img3/muralia/lib-fondos-h.webp",
+       "w": 2400,
+       "h": 1606,
+       "nombre": "Fondos horizontales",
+       "formato": "Selección de 4 · 1920 × 1080",
+       "alt": "Cuatro fondos horizontales de Muralia: plano en grilla, F-120, horizonte de sectores y recorrido de ductos."
       },
       {
        "src": "img3/muralia/patron_aparejo.webp",
@@ -2495,15 +2655,6 @@ window.PORTAFOLIO = {
        "nombre": "Lana",
        "formato": "Fondo 1920 × 1080",
        "alt": "Lana. Fondo 1920 × 1080"
-      },
-      {
-       "src": "img3/muralia/lib-fondos.webp",
-       "w": 2000,
-       "h": 1144,
-       "nombre": "Fondos de pantalla",
-       "formato": "52 fondos · 1080 × 1920",
-       "alt": "Hoja de contactos con los 52 fondos de pantalla de Muralia.",
-       "nota": "Cincuenta y dos fondos sin logo, cada uno en vertical 1080 × 1920 y horizontal 1920 × 1080: aparejos, achurados, cortes de muro, ejes de plano, ondas acústicas y curvas de temperatura."
       }
      ]
     },

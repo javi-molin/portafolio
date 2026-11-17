@@ -80,13 +80,20 @@
       <p class="nota__pie"><span>Abre una carpeta para ver los proyectos.</span><a href="mailto:javimolin@gmail.com">javimolin@gmail.com</a></p>
     </aside>
 
-    <!-- Piezas sueltas en el escritorio: cada una abre su proyecto en esa pieza. -->
-    <nav class="fotos" aria-label="Piezas destacadas">
-      <a class="foto" href="#p/dia-del-nino/7/1"><span class="foto__img"><img src="assets/escritorio/dia-del-nino.webp" alt="" width="160" height="160"></span><span class="foto__nombre">dia-del-nino.jpg</span></a>
-      <a class="foto" href="#p/new-romantic/1/1"><span class="foto__img"><img src="assets/escritorio/new-romantic.webp" alt="" width="160" height="160"></span><span class="foto__nombre">new-romantic.jpg</span></a>
-      <a class="foto" href="#p/muralia/1/1"><span class="foto__img"><img src="assets/escritorio/muralia.webp" alt="" width="160" height="160"></span><span class="foto__nombre">muralia.png</span></a>
-      <a class="foto" href="#p/ventas-privadas/2/1"><span class="foto__img"><img src="assets/escritorio/ventas-privadas.webp" alt="" width="160" height="160"></span><span class="foto__nombre">ventas.jpg</span></a>
-    </nav>
+    <!-- Carrusel de piezas destacadas: lo arma app.js con los datos de cada proyecto. -->
+    <section class="destacadas" aria-roledescription="carrusel" aria-label="Piezas destacadas">
+      <div class="destacadas__barra">
+        <span class="destacadas__titulo"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" shape-rendering="crispEdges"><path d="M1 2h11v9H1zM1 8l3-3 3 3 2-2 3 3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>destacadas</span>
+        <span class="destacadas__cuenta mono" aria-live="polite"></span>
+        <button class="destacadas__pausa" type="button" aria-label="Pausar el carrusel" aria-pressed="false"></button>
+      </div>
+      <div class="destacadas__pantalla"></div>
+      <div class="destacadas__pie">
+        <button class="destacadas__flecha" type="button" data-paso="-1" aria-label="Pieza destacada anterior">←</button>
+        <a class="destacadas__texto" href="#"></a>
+        <button class="destacadas__flecha" type="button" data-paso="1" aria-label="Pieza destacada siguiente">→</button>
+      </div>
+    </section>
 
     <div class="rotulo">
       <p class="rotulo__sobre">María Javiera Molin Aguad · Diseñadora Integral UC</p>

@@ -18,7 +18,7 @@ Para verlo en tu computador, abre `index.html` con doble clic.
 | `assets/js/app.js` | Las ventanas, la navegación y el fondo animado e interactivo. |
 | `assets/js/data.js` | El contenido: los 12 proyectos con sus textos, créditos y piezas, y el perfil. |
 | `assets/img/` | El cursor y el retrato. |
-| `assets/escritorio/` | Las miniaturas de las piezas sueltas del escritorio. |
+| `muralia/biblioteca.html` | La biblioteca gráfica interactiva de Muralia, enlazada desde su proyecto. |
 | `assets/compartir.jpg` | La imagen que aparece al compartir el link (1200 × 630). |
 | `mini/` | Miniaturas livianas (200 px) de cada pieza, con la misma ruta que en `img1/`, `img2/` e `img3/`. Si agregas una pieza nueva, agrega también su miniatura. |
 | `assets/fonts/` | Las tipografías (Geist, Geist Mono, Pixelify Sans, Jersey 10 y Poppins), incluidas en el sitio. |
@@ -31,7 +31,8 @@ Para verlo en tu computador, abre `index.html` con doble clic.
 - **Color de las carpetas:** en `style.css`, cambia `--acento`.
 - **Colores del fondo:** en `app.js`, edita la lista `paletas`. Cada clic en el escritorio pasa a la siguiente.
 - **Texto de la nota:** está en `index.html`, dentro de `<aside class="nota">`.
-- **Piezas sueltas del escritorio:** en `index.html`, dentro de `<nav class="fotos">`. Cada enlace `#p/proyecto/sección/pieza` abre esa pieza (por ejemplo `#p/dia-del-nino/7/1`).
+- **Carrusel de destacadas:** en `assets/js/app.js`, la lista `DESTACADAS`. Cada entrada dice proyecto, sección y pieza (contadas desde 1) y una etiqueta. Arriba de la lista están las cuatro condiciones para que una pieza entre.
+- **Enlace directo a una pieza:** `#p/proyecto/sección/pieza`, por ejemplo `#p/dia-del-nino/7/1`.
 - **Enlace a un sitio en vivo:** en `data.js`, agrega `"enlace": {"url": "…", "texto": "…"}` a la sección.
 - **Textos de un proyecto:** en `data.js`, busca el proyecto por su `slug`.
 - **Currículum:** reemplaza `cv/CV-Javi-Molin.pdf` por el nuevo con el mismo nombre.

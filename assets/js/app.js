@@ -351,6 +351,93 @@
   document.addEventListener('touchstart', alTocar, { passive: true });
   document.addEventListener('touchend', alSoltar, { passive: true });
 
+  /* ---------- Carrusel de piezas destacadas ----------
+     Entra una pieza solo si cumple las cuatro condiciones, todas comprobables:
+     1. está producida o publicada (no es propuesta);
+     2. el diseño es enteramente de Javi (sin concepto de agencia: queda fuera Toys"R"Us);
+     3. su original mide 1600 px o más por el lado mayor, o es una animación;
+     4. entre todas cubren disciplinas distintas: evento, sistema gráfico, identidad,
+        campaña y animación, sin repetir más de dos veces un mismo proyecto. */
+  var DESTACADAS = [
+    { p: 'dia-del-nino', s: 1, z: 1, tipo: 'Evento producido' },
+    { p: 'muralia', s: 3, z: 3, tipo: 'Identidad y biblioteca' },
+    { p: 'ventas-privadas', s: 5, z: 6, tipo: 'Animación' },
+    { p: 'dia-del-nino', s: 2, z: 1, tipo: 'Sistema gráfico' },
+    { p: 'ventas-privadas', s: 2, z: 1, tipo: 'Sistema de piezas' },
+    { p: 'activaciones', s: 4, z: 5, tipo: 'Animación' },
+    { p: 'campeones-sin-limites', s: 5, z: 1, tipo: 'Campaña en Metro' },
+    { p: 'muralia', s: 3, z: 1, tipo: 'Construcción de iconos' }
+  ].map(function (d) {
+    var p = porSlug(d.p), sec = p && p.secciones[d.s - 1], pz = sec && sec.piezas && sec.piezas[d.z - 1];
+    return pz ? { p: p, pz: pz, tipo: d.tipo, href: '#p/' + d.p + '/' + d.s + '/' + d.z } : null;
+  }).filter(Boolean);
+
+  var caja = document.querySelector('.destacadas');
+  if (caja && DESTACADAS.length) {
+    var pantalla = caja.querySelector('.destacadas__pantalla');
+    var texto = caja.querySelector('.destacadas__texto');
+    var cuenta = caja.querySelector('.destacadas__cuenta');
+    var pausa = caja.querySelector('.destacadas__pausa');
+    var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var actual = 0, reloj = null, pausado = quieto, encima = false;
+
+    pantalla.innerHTML = DESTACADAS.map(function (d, n) {
+      var pz = d.pz;
+      var medio = pz.video
+        ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" muted loop playsinline preload="none" aria-label="' + esc(pz.alt) + '"></video>'
+        : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '" width="' + pz.w + '" height="' + pz.h + '"' + (n ? ' loading="lazy"' : '') + '>';
+      return '<a class="destacada' + (n === 0 ? ' es-activa' : '') + '" href="' + d.href + '" tabindex="' + (n === 0 ? '0' : '-1') +
+        '" aria-hidden="' + (n !== 0) + '" aria-roledescription="diapositiva" aria-label="' + (n + 1) + ' de ' + DESTACADAS.length + ': ' + esc(pz.nombre) + '">' + medio + '</a>';
+    }).join('');
+    var slides = pantalla.querySelectorAll('.destacada');
+
+    function mostrar(n) {
+      var antes = slides[actual];
+      actual = (n + DESTACADAS.length) % DESTACADAS.length;
+      var d = DESTACADAS[actual], ahora = slides[actual];
+      if (antes !== ahora) {
+        antes.classList.remove('es-activa'); antes.setAttribute('aria-hidden', 'true'); antes.tabIndex = -1;
+        var va = antes.querySelector('video'); if (va) va.pause();
+      }
+      ahora.classList.add('es-activa'); ahora.setAttribute('aria-hidden', 'false'); ahora.tabIndex = 0;
+      var v = ahora.querySelector('video');
+      if (v) { v.preload = 'auto'; if (!quieto) { var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); } }
+      texto.href = d.href;
+      texto.innerHTML = '<b>' + esc(d.p.titulo) + '</b><span>' + esc(d.pz.nombre) + '</span><i>' + esc(d.tipo) + '</i>';
+      cuenta.textContent = n2(actual + 1) + ' / ' + n2(DESTACADAS.length);
+      programar();
+    }
+    function programar() {
+      clearTimeout(reloj);
+      if (pausado || encima) return;
+      reloj = setTimeout(function () { mostrar(actual + 1); }, DESTACADAS[actual].pz.video ? 9000 : 5000);
+    }
+    function pintarPausa() {
+      pausa.setAttribute('aria-pressed', String(pausado));
+      pausa.setAttribute('aria-label', pausado ? 'Reanudar el carrusel' : 'Pausar el carrusel');
+      pausa.textContent = pausado ? '▶' : 'II';
+    }
+    caja.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-paso]');
+      if (b) { mostrar(actual + Number(b.dataset.paso)); return; }
+      if (e.target.closest('.destacadas__pausa')) { pausado = !pausado; pintarPausa(); programar(); }
+    });
+    caja.addEventListener('mouseenter', function () { encima = true; programar(); });
+    caja.addEventListener('mouseleave', function () { encima = false; programar(); });
+    caja.addEventListener('focusin', function () { encima = true; programar(); });
+    caja.addEventListener('focusout', function (e) { if (!caja.contains(e.relatedTarget)) { encima = false; programar(); } });
+    var toqueC = null;
+    pantalla.addEventListener('touchstart', function (e) { toqueC = e.touches[0].clientX; }, { passive: true });
+    pantalla.addEventListener('touchend', function (e) {
+      if (toqueC === null) return;
+      var dx = e.changedTouches[0].clientX - toqueC; toqueC = null;
+      if (Math.abs(dx) > 40) { e.preventDefault(); mostrar(actual + (dx < 0 ? 1 : -1)); }
+    });
+    document.addEventListener('visibilitychange', function () { if (document.hidden) clearTimeout(reloj); else programar(); });
+    pintarPausa();
+    mostrar(0);
+  }
+
   window.addEventListener('hashchange', alCambiarRuta);
   alCambiarRuta();
 
