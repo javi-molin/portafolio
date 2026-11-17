@@ -18,6 +18,10 @@
     });
   }
   function porSlug(slug) { return proyectos.filter(function (p) { return p.slug === slug; })[0]; }
+  function n2(n) { return (n < 10 ? '0' : '') + n; }
+  /* Miniatura liviana (200 px) de cada pieza, en mini/ con la misma ruta. */
+  function mini(src) { return String(src).replace(/^(img\d)\//, 'mini/$1/'); }
+  var PIE = 'Las fotos de modelos y producto son material de las marcas; el diseño, la composición y los originales son míos, salvo donde se indica otra autoría.';
 
   /* ---------- Vistas ---------- */
 
@@ -52,65 +56,73 @@
       (p.formatos && p.formatos.length ? '<dt>Formatos</dt><dd>' + esc(p.formatos.join(' · ')) + '</dd>' : '') +
       (p.creditos && p.creditos.length ? '<dt>Créditos</dt><dd>' + p.creditos.map(esc).join('<br>') + '</dd>' : '');
 
-    /* Pestañas compactas: número y título corto; el título completo queda en el tooltip. */
-    var tabs = secs.map(function (s, n) {
-      return '<button class="tab" type="button" role="tab" title="' + esc(s.titulo) + '" aria-selected="' + (s === sec) + '" data-sec="' + n + '">' +
-        '<span class="tab__n">' + (n + 1 < 10 ? '0' : '') + (n + 1) + '</span>' + esc(s.titulo) + '</button>';
-    }).join('');
-
-    var visor = '';
-    if (pz) {
-      var alta = pz.h / pz.w > 1.9;
-      var medio = pz.video
-        ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" preload="metadata" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
-        : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '" width="' + pz.w + '" height="' + pz.h + '">';
-      var hayVarias = piezas.length > 1 || secs.length > 1;
-      visor = '<figure class="lamina">' +
-        '<div class="lamina__marco' + (alta ? ' es-alta' : '') + '">' + medio +
-        (hayVarias ? '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior">←</button>' +
-          '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente">→</button>' : '') +
-        '</div>' +
-        '<figcaption class="lamina__pie"><span><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') +
-        (pz.nota ? '<span class="lamina__nota"> — ' + esc(pz.nota) + '</span>' : '') + '</span>' +
-        '<span class="mono suave">' + (i + 1) + ' / ' + piezas.length + '</span></figcaption></figure>';
-      if (piezas.length > 1) {
-        visor += '<div class="minis">' + piezas.map(function (q, n) {
-          return '<button class="mini" type="button" data-pieza="' + n + '" aria-current="' + (n === i) + '" aria-label="' + esc(q.nombre) + '">' +
-            '<img src="' + esc(q.src) + '" alt="" loading="lazy"></button>';
-        }).join('') + '</div>';
-      }
-    }
-
+    /* Contenido de la sección activa: se despliega bajo su ítem del índice. */
     var colores = sec.colores ? '<ul class="colores">' + sec.colores.map(function (c) {
       return '<li class="color" style="background:' + esc(c.hex) + ';color:' + esc(c.ink) + '">' + esc(c.name) + '<br>' + esc(c.hex) + '</li>';
     }).join('') + '</ul>' : '';
     var texto = sec.texto ? sec.texto.map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') : '';
     var lista = sec.lista ? (sec.listaTitulo ? '<p class="sobre">' + esc(sec.listaTitulo) + '</p>' : '') +
       '<ul class="seccion__lista">' + sec.lista.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' : '';
-    var seccion = (texto || lista || colores)
-      ? '<section class="seccion"><p class="sobre">' + esc(sec.titulo) + '</p>' + texto + lista + colores + '</section>' : '';
+    var enlace = sec.enlace ? '<p><a class="boton boton--chico" href="' + esc(sec.enlace.url) + '" target="_blank" rel="noopener">' + esc(sec.enlace.texto) + ' ↗</a></p>' : '';
+    var detalle = (texto || lista || colores || enlace) ? '<div class="seccion">' + texto + lista + colores + enlace + '</div>' : '';
 
-    /* Anterior y siguiente recorren los 12 proyectos en orden, así nunca apuntan al mismo. */
+    /* Índice vertical: todas las secciones a la vista, numeradas. */
+    var indice = '<ol class="indice" aria-label="En este proyecto">' + secs.map(function (s, n) {
+      var activa = s === sec;
+      return '<li class="indice__item' + (activa ? ' es-activa' : '') + '">' +
+        '<button class="indice__boton" type="button" data-sec="' + n + '" aria-current="' + activa + '">' +
+        '<span class="indice__n">' + (n + 1 < 10 ? '0' : '') + (n + 1) + '</span>' +
+        '<span class="indice__titulo">' + esc(s.titulo) + '</span>' +
+        '<span class="indice__cuenta">' + (s.piezas || []).length + '</span></button>' +
+        (activa ? detalle : '') + '</li>';
+    }).join('') + '</ol>';
+
+    var visor = '';
+    if (pz) {
+      var alta = pz.h / pz.w > 1.9;
+      var medio = pz.video
+        ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" preload="metadata" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
+        : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '" width="' + pz.w + '" height="' + pz.h + '" data-ampliar>';
+      var hayVarias = piezas.length > 1 || secs.length > 1;
+      visor = '<figure class="lamina">' +
+        '<div class="lamina__marco' + (alta ? ' es-alta' : '') + '">' + medio +
+        (hayVarias ? '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior">←</button>' +
+          '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente">→</button>' : '') +
+        '<button class="lamina__ampliar" type="button" data-ampliar aria-label="Ver a pantalla completa"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" shape-rendering="crispEdges"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" stroke="currentColor" stroke-width="2" fill="none"/></svg><span>Ampliar</span></button>' +
+        '</div>' +
+        '<figcaption class="lamina__pie"><span><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') +
+        (pz.nota ? '<span class="lamina__nota"> — ' + esc(pz.nota) + '</span>' : '') + '</span>' +
+        '<span class="mono suave">' + (n2(estado.sec + 1)) + ' · ' + (i + 1) + ' / ' + piezas.length + '</span></figcaption></figure>';
+      if (piezas.length > 1) {
+        visor += '<div class="minis">' + piezas.map(function (q, n) {
+          return '<button class="mini" type="button" data-pieza="' + n + '" aria-current="' + (n === i) + '" aria-label="' + esc(q.nombre) + '">' +
+            '<img src="' + esc(mini(q.src)) + '" alt="" loading="lazy"></button>';
+        }).join('') + '</div>';
+      }
+    }
+
+    /* Anterior y siguiente recorren los 12 proyectos en orden; en los extremos vuelven a la carpeta o al escritorio. */
     var pos = proyectos.indexOf(p);
-    var ant = proyectos[(pos - 1 + proyectos.length) % proyectos.length];
-    var sig = proyectos[(pos + 1) % proyectos.length];
+    var ant = proyectos[pos - 1];
+    var sig = proyectos[pos + 1];
+    var enlaceAnt = ant
+      ? '<a class="enlace" href="#p/' + ant.slug + '"><span>← Anterior</span>' + esc(ant.titulo) + '</a>'
+      : '<a class="enlace" href="#ripley"><span>← Volver</span>Carpeta Ripley</a>';
+    var enlaceSig = sig
+      ? '<a class="enlace enlace--sig" href="#p/' + sig.slug + '"><span>Siguiente →</span>' + esc(sig.titulo) + '</a>'
+      : '<a class="enlace enlace--sig" href="#"><span>Volver →</span>Escritorio</a>';
 
     return '<article class="proyecto">' +
       '<div class="proyecto__datos">' +
       '<p class="sobre">' + (p.n ? esc(p.n) + ' · ' : '') + esc(p.tipo) + '</p>' +
       '<h2 class="titulo titulo--m">' + esc(p.titulo) + '</h2>' +
       '<p class="proyecto__resumen">' + esc(p.resumen) + '</p>' +
-      seccion +
-      '<details class="proyecto__ficha"' + (seccion ? '' : ' open') + '><summary>Ficha del proyecto</summary><dl class="ficha">' + ficha + '</dl></details>' +
-      '<nav class="proyecto__pie" aria-label="Otros proyectos">' +
-      '<a class="enlace" href="#p/' + ant.slug + '"><span>← Anterior</span>' + esc(ant.titulo) + '</a>' +
-      '<a class="enlace enlace--sig" href="#p/' + sig.slug + '"><span>Siguiente →</span>' + esc(sig.titulo) + '</a>' +
-      '</nav>' +
+      '<p class="sobre indice__sobre">En este proyecto</p>' + indice +
+      '<details class="proyecto__ficha"><summary>Ficha del proyecto</summary><dl class="ficha">' + ficha + '</dl></details>' +
+      '<p class="proyecto__creditos">' + esc(PIE) + '</p>' +
+      '<nav class="proyecto__pie" aria-label="Otros proyectos">' + enlaceAnt + enlaceSig + '</nav>' +
       '</div>' +
-      '<div class="proyecto__visor">' +
-      '<div class="tabs" role="tablist" aria-label="Secciones del proyecto">' + tabs + '</div>' +
-      visor +
-      '</div></article>';
+      '<div class="proyecto__visor">' + visor + '</div></article>';
   }
 
   function vistaSobre() {
@@ -161,7 +173,10 @@
   function leerRuta() {
     var h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
     var partes = h.split('/');
-    if (partes[0] === 'p' && porSlug(partes[1])) return { vista: 'proyecto', slug: partes[1] };
+    /* #p/slug abre el proyecto; #p/slug/3/2 abre la sección 3, pieza 2. */
+    if (partes[0] === 'p' && porSlug(partes[1])) {
+      return { vista: 'proyecto', slug: partes[1], sec: Math.max(0, (parseInt(partes[2], 10) || 1) - 1), pieza: Math.max(0, (parseInt(partes[3], 10) || 1) - 1) };
+    }
     if (['ripley', 'sobre', 'contacto'].indexOf(partes[0]) > -1) return { vista: partes[0], slug: null };
     return { vista: '', slug: null };
   }
@@ -189,6 +204,8 @@
   function pintar(conservarScroll) {
     var scroll = conservarScroll ? cuerpo.scrollTop : 0;
     if (!estado.vista) {
+      estado.ampliado = false;
+      pintarAmpliado(null);
       ventana.hidden = true;
       cuerpo.innerHTML = '';
       document.title = 'Javi Molin — Portafolio de diseño';
@@ -197,7 +214,7 @@
     }
     var p = estado.vista === 'proyecto' ? porSlug(estado.slug) : null;
     /* Al cambiar de pieza o pestaña se conserva dónde estaba cada zona con scroll y si la ficha estaba abierta. */
-    var zonas = ['.proyecto__datos', '.tabs', '.minis'];
+    var zonas = ['.proyecto__datos', '.minis'];
     var antes = conservarScroll ? zonas.map(function (s) {
       var e = cuerpo.querySelector(s); return e ? [e.scrollTop, e.scrollLeft] : null;
     }) : [];
@@ -208,17 +225,27 @@
       : estado.vista === 'sobre' ? vistaSobre()
       : vistaContacto();
     cuerpo.classList.toggle('es-proyecto', estado.vista === 'proyecto');
+    /* El proyecto abre maximizado (tapa los íconos) y lleva los créditos dentro de su columna. */
+    ventana.classList.toggle('es-max', estado.vista === 'proyecto');
+    pintarAmpliado(p);
     ficha = cuerpo.querySelector('.proyecto__ficha');
     if (ficha && conservarScroll && estado.ficha != null) ficha.open = estado.ficha;
     antes.forEach(function (v, n) {
       var e = cuerpo.querySelector(zonas[n]); if (e && v) { e.scrollTop = v[0]; e.scrollLeft = v[1]; }
     });
-    if (!conservarScroll) {
-      var activa = cuerpo.querySelector('.tab[aria-selected="true"]');
-      if (activa && activa.scrollIntoView) activa.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    /* Mantiene a la vista la sección activa del índice y la miniatura actual, sin mover la página. */
+    var datos = cuerpo.querySelector('.proyecto__datos');
+    var item = cuerpo.querySelector('.indice__item.es-activa');
+    if (datos && item && datos.scrollHeight > datos.clientHeight) {
+      var arriba = item.offsetTop - datos.offsetTop;
+      if (arriba < datos.scrollTop) datos.scrollTop = arriba - 8;
+      else if (arriba + 40 > datos.scrollTop + datos.clientHeight - 90) datos.scrollTop = arriba - 60;
     }
-    var miniActual = cuerpo.querySelector('.mini[aria-current="true"]');
-    if (miniActual && miniActual.scrollIntoView) miniActual.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    var minis = cuerpo.querySelector('.minis'), miniActual = cuerpo.querySelector('.mini[aria-current="true"]');
+    if (minis && miniActual) {
+      var izq = miniActual.offsetLeft - minis.offsetLeft;
+      if (izq < minis.scrollLeft || izq + miniActual.offsetWidth > minis.scrollLeft + minis.clientWidth) minis.scrollLeft = izq - minis.clientWidth / 2;
+    }
     pintarRuta(p);
     marcarIcono();
     var estabaCerrada = ventana.hidden;
@@ -230,7 +257,8 @@
 
   function alCambiarRuta() {
     var r = leerRuta();
-    estado.vista = r.vista; estado.slug = r.slug; estado.sec = 0; estado.pieza = 0;
+    estado.vista = r.vista; estado.slug = r.slug; estado.sec = r.sec || 0; estado.pieza = r.pieza || 0;
+    estado.ampliado = false;
     pintar(false);
   }
 
@@ -252,6 +280,7 @@
   }
 
   cuerpo.addEventListener('click', function (e) {
+    if (e.target.closest('[data-ampliar]')) { estado.ampliado = true; pintarAmpliado(porSlug(estado.slug)); return; }
     var t = e.target.closest('[data-sec],[data-pieza],[data-mover]');
     if (!t) return;
     if (t.dataset.sec != null) { estado.sec = +t.dataset.sec; estado.pieza = 0; pintar(true); }
@@ -260,12 +289,67 @@
   });
 
   document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && estado.ampliado) { cerrarAmpliado(); return; }
     if (e.key === 'Escape' && estado.vista) { location.hash = ''; return; }
     if (estado.vista !== 'proyecto' || e.altKey || e.metaKey || e.ctrlKey) return;
     if (e.target && /^(INPUT|TEXTAREA|VIDEO)$/.test(e.target.tagName)) return;
     if (e.key === 'ArrowRight') { e.preventDefault(); mover(1); }
     if (e.key === 'ArrowLeft') { e.preventDefault(); mover(-1); }
   });
+
+  /* ---------- Pieza a pantalla completa ---------- */
+
+  var ampliado = document.createElement('div');
+  ampliado.className = 'ampliado';
+  ampliado.hidden = true;
+  ampliado.setAttribute('role', 'dialog');
+  ampliado.setAttribute('aria-modal', 'true');
+  ampliado.setAttribute('aria-label', 'Pieza a pantalla completa');
+  document.body.appendChild(ampliado);
+
+  function pintarAmpliado(p) {
+    if (!estado.ampliado || !p) { ampliado.hidden = true; ampliado.innerHTML = ''; return; }
+    var sec = p.secciones[Math.min(estado.sec, p.secciones.length - 1)];
+    var piezas = sec.piezas || [];
+    var pz = piezas[Math.min(estado.pieza, piezas.length - 1)];
+    if (!pz) { ampliado.hidden = true; return; }
+    var medio = pz.video
+      ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
+      : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '">';
+    var estabaOculto = ampliado.hidden;
+    ampliado.innerHTML =
+      '<div class="ampliado__barra"><span><b>' + esc(p.titulo) + '</b> / ' + esc(sec.titulo) + '</span>' +
+      '<button class="ampliado__cerrar" type="button" data-cerrar aria-label="Cerrar pantalla completa">Cerrar ✕</button></div>' +
+      '<div class="ampliado__pieza">' + medio + '</div>' +
+      '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior">←</button>' +
+      '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente">→</button>' +
+      '<p class="ampliado__pie"><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') + '</p>';
+    ampliado.hidden = false;
+    if (estabaOculto) { var c = ampliado.querySelector('[data-cerrar]'); if (c) c.focus({ preventScroll: true }); }
+  }
+  function cerrarAmpliado() {
+    estado.ampliado = false;
+    pintarAmpliado(null);
+    var b = cuerpo.querySelector('.lamina__ampliar');
+    if (b) b.focus({ preventScroll: true });
+  }
+  ampliado.addEventListener('click', function (e) {
+    var t = e.target.closest('[data-mover]');
+    if (t) { mover(+t.dataset.mover); return; }
+    if (e.target.closest('[data-cerrar]') || e.target === ampliado || e.target.classList.contains('ampliado__pieza')) cerrarAmpliado();
+  });
+
+  /* Deslizar con el dedo cambia de pieza, en el visor y a pantalla completa. */
+  var toque = null;
+  function alTocar(e) { if (e.touches.length === 1) toque = { x: e.touches[0].clientX, y: e.touches[0].clientY }; }
+  function alSoltar(e) {
+    if (!toque || estado.vista !== 'proyecto') return;
+    var dx = e.changedTouches[0].clientX - toque.x, dy = e.changedTouches[0].clientY - toque.y;
+    toque = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5 && (e.target.closest('.lamina__marco') || e.target.closest('.ampliado'))) mover(dx < 0 ? 1 : -1);
+  }
+  document.addEventListener('touchstart', alTocar, { passive: true });
+  document.addEventListener('touchend', alSoltar, { passive: true });
 
   window.addEventListener('hashchange', alCambiarRuta);
   alCambiarRuta();
