@@ -145,7 +145,7 @@
       '<p class="sobre">María Javiera Molin Aguad</p>' +
       '<h2 class="titulo titulo--l">Sobre mí</h2>' +
       '<p>Soy Diseñadora Integral UC. Diseño campañas, eventos y piezas de tienda para marcas en Chile y Perú, pensadas para funcionar igual en un pendón de dos metros que en un mensaje de WhatsApp.</p>' +
-      '<p>Hoy trabajo freelance para Muralia y Neorigen, y busco un rol in-house en diseño.</p>' +
+      '<p>En 2025 fui Diseñadora de Marketing en Ripley. Hoy trabajo como freelance para Muralia y Neorigen.</p>' +
       '<p><a class="boton boton--acento" href="cv/CV-Javi-Molin.pdf" download>Descargar currículum</a></p>' +
       '</div>' +
       '<div class="sobremi__listas">' +
@@ -160,7 +160,7 @@
     return '<div class="contacto">' +
       '<p class="sobre">Santiago, Chile</p>' +
       '<h2 class="titulo titulo--xl">¿Conversamos?</h2>' +
-      '<p style="max-width:52ch;font-size:18px">Busco un rol in-house en diseño y tomo proyectos freelance.</p>' +
+      '<p style="max-width:52ch;font-size:18px">Escríbeme para conversar sobre un proyecto o un equipo de diseño.</p>' +
       '<div class="contacto__acciones">' +
       '<a class="boton boton--acento" href="mailto:javimolin@gmail.com">javimolin@gmail.com</a>' +
       '<a class="boton" href="https://www.linkedin.com/in/javimolin/" target="_blank" rel="noopener">LinkedIn</a>' +
