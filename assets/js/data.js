@@ -1,4 +1,4 @@
-/* Contenido del portafolio: proyectos, piezas y perfil. Generado desde el repo javimolin-rgb/portafolio. */
+/* Contenido del portafolio: proyectos, piezas y perfil. Repo javi-molin/portafolio, publicado en molin.cl. */
 window.PORTAFOLIO = {
  "proyectos": [
   {
@@ -455,12 +455,12 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
-       "src": "img1/campeones-sin-limites/c_kv1.webp",
+       "src": "img1/campeones-sin-limites/c_frame.webp",
        "w": 1600,
-       "h": 697,
-       "nombre": "Key visual de la campaña en Metro",
-       "formato": "Formato horizontal",
-       "alt": "Key visual: una nadadora con gorra y antiparras, las letras de Ripley de fondo y la frase \"No somos una historia, hacemos historia\"."
+       "h": 677,
+       "nombre": "Frame de prensa",
+       "formato": "Fotomontaje",
+       "alt": "Frame de prensa. Fotomontaje"
       }
      ],
      "listaTitulo": "Decisiones"
@@ -519,14 +519,6 @@ window.PORTAFOLIO = {
       "Gráfica aplicada sobre los fotomontajes 3D de la productora."
      ],
      "piezas": [
-      {
-       "src": "img1/campeones-sin-limites/c_frame.webp",
-       "w": 1600,
-       "h": 677,
-       "nombre": "Frame de prensa",
-       "formato": "Fotomontaje",
-       "alt": "Frame de prensa. Fotomontaje"
-      },
       {
        "src": "img1/campeones-sin-limites/c_pagoda.webp",
        "w": 1600,
@@ -600,6 +592,14 @@ window.PORTAFOLIO = {
       "La frase de la campaña en Metro. Cada pieza pone al deportista primero y la marca a la altura de la vista."
      ],
      "piezas": [
+      {
+       "src": "img1/campeones-sin-limites/c_kv1.webp",
+       "w": 1600,
+       "h": 697,
+       "nombre": "Key visual de la campaña en Metro",
+       "formato": "Formato horizontal",
+       "alt": "Key visual: una nadadora con gorra y antiparras, las letras de Ripley de fondo y la frase \"No somos una historia, hacemos historia\"."
+      },
       {
        "src": "img1/campeones-sin-limites/c_ht1.webp",
        "w": 800,
@@ -2132,19 +2132,6 @@ window.PORTAFOLIO = {
    },
    "secciones": [
     {
-     "titulo": "Portada",
-     "piezas": [
-      {
-       "src": "img3/activaciones/a_ch.webp",
-       "w": 1212,
-       "h": 1600,
-       "nombre": "Puma Challenge",
-       "formato": "Post",
-       "alt": "Pieza Puma Challenge: zapatillas rosadas y calcetines granate sobre fondo oscuro, con el título en blanco."
-      }
-     ]
-    },
-    {
      "titulo": "Sneakerheads: del plano al counter",
      "texto": [
       "Con Puma y ReparaLab, en Ripley Costanera Center."
@@ -2194,6 +2181,19 @@ window.PORTAFOLIO = {
        "nombre": "Personaliza tus sneakers",
        "formato": "Tótem",
        "alt": "Personaliza tus sneakers. Tótem"
+      }
+     ]
+    },
+    {
+     "titulo": "Puma Challenge",
+     "piezas": [
+      {
+       "src": "img3/activaciones/a_ch.webp",
+       "w": 1212,
+       "h": 1600,
+       "nombre": "Puma Challenge",
+       "formato": "Post",
+       "alt": "Pieza Puma Challenge: zapatillas rosadas y calcetines granate sobre fondo oscuro, con el título en blanco."
       }
      ]
     },
@@ -2714,7 +2714,11 @@ window.PORTAFOLIO = {
        "formato": "Portada, escritorio",
        "alt": "muralia.cl. Portada, escritorio"
       }
-     ]
+     ],
+     "enlace": {
+      "url": "https://muralia.cl",
+      "texto": "Visitar muralia.cl"
+     }
     }
    ],
    "estado": "Freelance, en curso"
@@ -2765,7 +2769,11 @@ window.PORTAFOLIO = {
        "alt": "Portada del sitio de Neorigen: una casa de madera oscura en el bosque, el título Vive lo natural, a tu manera, y datos de los modelos."
       }
      ],
-     "listaTitulo": "Decisiones"
+     "listaTitulo": "Decisiones",
+     "enlace": {
+      "url": "https://neorigen.cl",
+      "texto": "Visitar neorigen.cl"
+     }
     },
     {
      "titulo": "Manual de marca",
