@@ -23,8 +23,8 @@ window.PORTAFOLIO = {
     "Fotos y videos del evento: registro del equipo de Marketing de Ripley."
    ],
    "cover": {
-    "src": "img1/dia-del-nino/ddn_f1346.webp",
-    "focus": "50% 45%"
+    "src": "assets/portadas/dia-del-nino.webp",
+    "focus": "50% 50%"
    },
    "secciones": [
     {
@@ -437,7 +437,7 @@ window.PORTAFOLIO = {
     "El logo Campeones Sin Límites viene de ediciones anteriores."
    ],
    "cover": {
-    "src": "img1/campeones-sin-limites/c_kv1.webp",
+    "src": "assets/portadas/campeones-sin-limites.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -790,7 +790,7 @@ window.PORTAFOLIO = {
     "Fotos de tienda: MacroMKT."
    ],
    "cover": {
-    "src": "img1/toys-r-us/t_std.webp",
+    "src": "assets/portadas/toys-r-us.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1137,7 +1137,7 @@ window.PORTAFOLIO = {
     "Fotos de modelos: material de campaña de cada marca."
    ],
    "cover": {
-    "src": "img2/new-romantic/s_nr_01.webp",
+    "src": "assets/portadas/new-romantic.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1360,8 +1360,8 @@ window.PORTAFOLIO = {
     "Fotos de modelos: material de campaña."
    ],
    "cover": {
-    "src": "img2/ventas-privadas/s_vp_08.webp",
-    "focus": "70% 40%"
+    "src": "assets/portadas/ventas-privadas.webp",
+    "focus": "50% 50%"
    },
    "secciones": [
     {
@@ -1591,7 +1591,7 @@ window.PORTAFOLIO = {
     "Fotos de producto y modelos: material de campaña."
    ],
    "cover": {
-    "src": "img2/me-fascinan-las-sandalias/s_sand_01v.webp",
+    "src": "assets/portadas/me-fascinan-las-sandalias.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1666,7 +1666,7 @@ window.PORTAFOLIO = {
     "Fotos de modelos: material de campaña."
    ],
    "cover": {
-    "src": "img2/ripley-beauty/r_stdc.webp",
+    "src": "assets/portadas/ripley-beauty.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1698,14 +1698,6 @@ window.PORTAFOLIO = {
       "\"Porque eres una clienta especial\": la banda convierte el save the date general en invitación sin rediseñar la pieza."
      ],
      "piezas": [
-      {
-       "src": "img2/ripley-beauty/r_stdc.webp",
-       "w": 1053,
-       "h": 1600,
-       "nombre": "General",
-       "formato": "Save the date",
-       "alt": "General. Save the date"
-      },
       {
        "src": "img2/ripley-beauty/r_clic.webp",
        "w": 1156,
@@ -1893,7 +1885,7 @@ window.PORTAFOLIO = {
    "resumen": "Propuesta de identidad para una semana de ofertas gamer de Ripley Perú, desarrollada como mini manual. No se produjo.",
    "creditos": [],
    "cover": {
-    "src": "img2/gamer-week/s_gw_01.webp",
+    "src": "assets/portadas/gamer-week.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1977,7 +1969,7 @@ window.PORTAFOLIO = {
    "resumen": "Piezas de temporada que se repiten en muchos formatos: un set de íconos ilustrados para Fiestas Patrias, gift cards por categoría y campañas para otros equipos de Ripley.",
    "creditos": [],
    "cover": {
-    "src": "img2/fiestas-patrias/sep1.webp",
+    "src": "assets/portadas/fiestas-patrias.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -2135,7 +2127,7 @@ window.PORTAFOLIO = {
    "resumen": "Eventos cortos con marcas dentro de Ripley: un espacio para sneakers, la llegada de la pelota del Mundial, degustaciones, marcas nuevas y piezas chicas que ordenan la tienda.",
    "creditos": [],
    "cover": {
-    "src": "img3/activaciones/a_ch.webp",
+    "src": "assets/portadas/activaciones.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -2456,42 +2448,14 @@ window.PORTAFOLIO = {
     },
     {
      "titulo": "Siete colores de obra",
-     "piezas": [],
-     "colores": [
+     "piezas": [
       {
-       "hex": "#C2551F",
-       "name": "Arcilla",
-       "ink": "#FFFDF9"
-      },
-      {
-       "hex": "#9C4318",
-       "name": "Arcilla oscura",
-       "ink": "#FFFDF9"
-      },
-      {
-       "hex": "#2B2A26",
-       "name": "Grafito",
-       "ink": "#FFFDF9"
-      },
-      {
-       "hex": "#3E4A3C",
-       "name": "Musgo",
-       "ink": "#EFE7DA"
-      },
-      {
-       "hex": "#EFE7DA",
-       "name": "Yeso",
-       "ink": "#2B2A26"
-      },
-      {
-       "hex": "#FFFDF9",
-       "name": "Papel",
-       "ink": "#2B2A26"
-      },
-      {
-       "hex": "#DDD5C4",
-       "name": "Filete",
-       "ink": "#2B2A26"
+       "src": "img3/muralia/lib-colores.webp",
+       "w": 2000,
+       "h": 1125,
+       "nombre": "Paleta de obra",
+       "formato": "7 colores",
+       "alt": "Paleta de Muralia: arcilla, arcilla oscura, grafito, musgo, yeso, papel y filete, con sus códigos."
       }
      ]
     },
@@ -2504,11 +2468,11 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/muralia/lib-iconos.webp",
-       "w": 1515,
-       "h": 1444,
+       "w": 2000,
+       "h": 1211,
        "nombre": "Iconos",
-       "alt": "Lámina de la biblioteca gráfica de Muralia: iconos.",
-       "formato": "Biblioteca de vectores SVG"
+       "formato": "54 vectores SVG",
+       "alt": "Los 54 iconos de Muralia en una grilla: productos, propiedades, sectores y contacto."
       }
      ]
     },
@@ -2521,11 +2485,19 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/muralia/lib-franjas.webp",
-       "w": 1400,
-       "h": 3431,
-       "nombre": "Franjas, marcos y señalética",
-       "alt": "Lámina de la biblioteca gráfica de Muralia: franjas, marcos y señalética.",
-       "formato": "Biblioteca de vectores SVG"
+       "w": 2000,
+       "h": 1345,
+       "nombre": "Franjas, marcos y contenedores",
+       "formato": "37 vectores SVG",
+       "alt": "Las 23 franjas y los 14 marcos de la biblioteca de Muralia."
+      },
+      {
+       "src": "img3/muralia/lib-senaletica.webp",
+       "w": 2000,
+       "h": 1145,
+       "nombre": "Señalética de plano, viñetas y marcadores",
+       "formato": "33 vectores SVG",
+       "alt": "Símbolos de dibujo técnico, viñetas, flechas, separadores y marcadores de Muralia."
       }
      ]
     },
@@ -2562,11 +2534,11 @@ window.PORTAFOLIO = {
      "piezas": [
       {
        "src": "img3/muralia/lib-fondos.webp",
-       "w": 864,
-       "h": 1600,
+       "w": 2000,
+       "h": 1144,
        "nombre": "Fondos de pantalla",
-       "alt": "Lámina de contactos con los 52 fondos de pantalla de Muralia.",
-       "formato": "1080 × 1920 y 1920 × 1080"
+       "formato": "52 fondos · 1080 × 1920",
+       "alt": "Hoja de contactos con los 52 fondos de pantalla de Muralia."
       }
      ]
     },
@@ -2793,19 +2765,18 @@ window.PORTAFOLIO = {
    "slug": "neorigen",
    "grupo": "freelance",
    "titulo": "Neorigen",
-   "tipo": "Marca, redes, sitio web y plataforma",
+   "tipo": "Sitio web, redes sociales y plataforma",
    "cliente": "Neorigen",
    "ano": "2026",
-   "rol": "Manual de marca, piezas para redes sociales, sitio web y plataforma de cronograma para el equipo de marketing",
+   "rol": "Sitio web, contenido para Instagram (carruseles, historias y reels) y plataforma de cronograma para el equipo de marketing",
    "formatos": [
-    "Manual de marca",
-    "Posts 1:1",
-    "Carruseles 4:5",
-    "Historias y portadas de reels",
     "Sitio web",
+    "Carruseles 4:5",
+    "Historias 9:16",
+    "Reels",
     "Plataforma de cronograma de contenido"
    ],
-   "resumen": "Neorigen diseña y construye casas prediseñadas sustentables, levantadas en el terreno de cada cliente y entregadas llave en mano. Hice su manual de marca, las piezas para redes sociales y el nuevo sitio neorigen.cl, con una ficha para cada modelo. También hice la plataforma con que el equipo de marketing organiza el cronograma de contenido.",
+   "resumen": "Neorigen diseña y construye casas prediseñadas sustentables, levantadas en el terreno de cada cliente y entregadas llave en mano. Hago su sitio neorigen.cl y su contenido de Instagram: carruseles, historias de cada modelo y reels. También hice la plataforma con que el equipo de marketing organiza el cronograma de contenido.",
    "creditos": [
     "Fotos de obra y renders: Neorigen. Logotipo existente de la marca."
    ],
@@ -2817,8 +2788,7 @@ window.PORTAFOLIO = {
     {
      "titulo": "Contexto",
      "texto": [
-      "Una constructora con una comunidad grande en Instagram y un tono que oscilaba entre lo técnico y lo aspiracional. Hacía falta ordenar la marca antes de hacer más piezas.",
-      "El manual documenta el logotipo existente y define todo lo demás: color, tipografía, fotografía, tono y el nombre de cada modelo."
+      "Una constructora con una comunidad grande en Instagram y un tono que oscilaba entre lo técnico y lo aspiracional. Hacía falta ordenar la marca antes de hacer más piezas."
      ],
      "lista": [
       "Un azul, usado con convicción: el del logotipo, con una escala derivada para fondos e interfaz.",
@@ -2839,60 +2809,10 @@ window.PORTAFOLIO = {
      "listaTitulo": "Decisiones"
     },
     {
-     "titulo": "Manual de marca",
-     "piezas": [
-      {
-       "src": "img3/neorigen/manual_01.webp",
-       "w": 1600,
-       "h": 899,
-       "nombre": "Portada",
-       "formato": "Manual de marca, versión 1",
-       "alt": "Portada. Manual de marca, versión 1"
-      },
-      {
-       "src": "img3/neorigen/manual_04.webp",
-       "w": 1600,
-       "h": 899,
-       "nombre": "Logotipo",
-       "formato": "Versiones del isotipo y el lockup",
-       "alt": "Logotipo. Versiones del isotipo y el lockup"
-      },
-      {
-       "src": "img3/neorigen/manual_05.webp",
-       "w": 1600,
-       "h": 899,
-       "nombre": "Uso del logo",
-       "formato": "Espacio de resguardo y qué no hacer",
-       "alt": "Uso del logo. Espacio de resguardo y qué no hacer"
-      },
-      {
-       "src": "img3/neorigen/manual_06.webp",
-       "w": 1600,
-       "h": 899,
-       "nombre": "Color",
-       "formato": "Azul Origen y escala derivada",
-       "alt": "Color. Azul Origen y escala derivada"
-      },
-      {
-       "src": "img3/neorigen/manual_07.webp",
-       "w": 1600,
-       "h": 899,
-       "nombre": "Tipografía",
-       "formato": "Fraunces, Work Sans e IBM Plex Mono",
-       "alt": "Tipografía. Fraunces, Work Sans e IBM Plex Mono"
-      },
-      {
-       "src": "img3/neorigen/manual_10.webp",
-       "w": 1600,
-       "h": 899,
-       "nombre": "Uso en redes",
-       "formato": "El logo en la esquina opuesta al texto",
-       "alt": "Uso en redes. El logo en la esquina opuesta al texto"
-      }
-     ]
-    },
-    {
-     "titulo": "Carrusel de lanzamiento del sitio",
+     "titulo": "Carrusel: estrenamos nueva web",
+     "texto": [
+      "El carrusel con que Neorigen anunció su sitio nuevo en Instagram."
+     ],
      "piezas": [
       {
        "src": "img3/neorigen/web_01.webp",
@@ -2945,197 +2865,294 @@ window.PORTAFOLIO = {
      ]
     },
     {
-     "titulo": "Redes sociales",
-     "piezas": [
-      {
-       "src": "img3/neorigen/post01_carrusel_1.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Avance de obra",
-       "formato": "Carrusel 1:1",
-       "alt": "Avance de obra. Carrusel 1:1"
-      },
-      {
-       "src": "img3/neorigen/post03_modelo_lingue.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Modelo Lingue",
-       "formato": "Post 1:1",
-       "alt": "Modelo Lingue. Post 1:1"
-      },
-      {
-       "src": "img3/neorigen/post05_convocatoria.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Qué cambió en tu día a día",
-       "formato": "Post 1:1",
-       "alt": "Qué cambió en tu día a día. Post 1:1"
-      },
-      {
-       "src": "img3/neorigen/post07_elige_modelo.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Elige tu modelo",
-       "formato": "Post 1:1",
-       "alt": "Elige tu modelo. Post 1:1"
-      },
-      {
-       "src": "img3/neorigen/post09_nombre_lingue.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Lingue, no Modelo 3",
-       "formato": "Post 1:1",
-       "alt": "Lingue, no Modelo 3. Post 1:1"
-      },
-      {
-       "src": "img3/neorigen/post10_precio_real.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Cuánto cuesta construir",
-       "formato": "Post 1:1",
-       "alt": "Cuánto cuesta construir. Post 1:1"
-      }
-     ]
-    },
-    {
-     "titulo": "Historias y portadas de reels",
-     "piezas": [
-      {
-       "src": "img3/neorigen/story01_encuesta_sueno.webp",
-       "w": 900,
-       "h": 1600,
-       "nombre": "Encuesta",
-       "formato": "Historia 9:16",
-       "alt": "Encuesta. Historia 9:16"
-      },
-      {
-       "src": "img3/neorigen/story02_cuenta_regresiva.webp",
-       "w": 900,
-       "h": 1600,
-       "nombre": "Cuenta regresiva",
-       "formato": "Historia 9:16",
-       "alt": "Cuenta regresiva. Historia 9:16"
-      },
-      {
-       "src": "img3/neorigen/reel01_pov_entrega.webp",
-       "w": 900,
-       "h": 1600,
-       "nombre": "Primera vez en su casa",
-       "formato": "Portada de reel",
-       "alt": "Primera vez en su casa. Portada de reel"
-      },
-      {
-       "src": "img3/neorigen/reel04_madera.webp",
-       "w": 900,
-       "h": 1600,
-       "nombre": "Lingue, antes de ser pared",
-       "formato": "Portada de reel",
-       "alt": "Lingue, antes de ser pared. Portada de reel"
-      }
-     ]
-    },
-    {
-     "titulo": "Encuentra tu modelo",
+     "titulo": "Los modelos, en historias",
      "texto": [
-      "Un carrusel para comparar los modelos uno por uno y terminar en una conversación por mensaje directo."
+      "Una historia por modelo para la destacada de Instagram, en el mismo orden en que aparecen en la web."
      ],
      "piezas": [
       {
-       "src": "img3/neorigen/p2_01_portada.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Portada",
-       "formato": "Carrusel 1:1",
-       "alt": "Portada. Carrusel 1:1"
+       "src": "img3/neorigen/modelo-01.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Lingue",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Lingue: dos renders del modelo con su nombre al centro."
       },
       {
-       "src": "img3/neorigen/p2_02_lingue.webp",
-       "w": 1080,
-       "h": 1080,
-       "nombre": "Modelo Lingue",
-       "formato": "Carrusel 1:1",
-       "alt": "Modelo Lingue. Carrusel 1:1"
+       "src": "img3/neorigen/modelo-02.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Huingán",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Huingán: dos renders del modelo con su nombre al centro."
       },
       {
-       "src": "img3/neorigen/p2_10_cierre.webp",
+       "src": "img3/neorigen/modelo-03.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Peumo",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Peumo: dos renders del modelo con su nombre al centro."
+      },
+      {
+       "src": "img3/neorigen/modelo-04.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Boldo",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Boldo: dos renders del modelo con su nombre al centro."
+      },
+      {
+       "src": "img3/neorigen/modelo-05.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Mañío",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Mañío: dos renders del modelo con su nombre al centro."
+      },
+      {
+       "src": "img3/neorigen/modelo-06.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Roble",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Roble: dos renders del modelo con su nombre al centro."
+      },
+      {
+       "src": "img3/neorigen/modelo-07.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Maitén",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Maitén: dos renders del modelo con su nombre al centro."
+      },
+      {
+       "src": "img3/neorigen/modelo-08.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Coihue",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Coihue: dos renders del modelo con su nombre al centro."
+      },
+      {
+       "src": "img3/neorigen/modelo-09.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Ciprés",
+       "formato": "Historia 9:16",
+       "alt": "Historia de Instagram de la Casa Ciprés: dos renders del modelo con su nombre al centro."
+      }
+     ]
+    },
+    {
+     "titulo": "Reels y videos",
+     "texto": [
+      "Reels para Instagram con preguntas frecuentes, el sistema constructivo, recorridos de modelos y avance de obra."
+     ],
+     "piezas": [
+      {
+       "src": "img3/neorigen/neo-prefabricadas-portada.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "¿Son prefabricadas?",
+       "formato": "Reel 9:16",
+       "alt": "Portada del reel ¿Son prefabricadas? de Neorigen.",
+       "video": "video/neo-prefabricadas.mp4",
+       "nota": "Responde la pregunta que más llega por mensaje."
+      },
+      {
+       "src": "img3/neorigen/neo-pilotes-portada.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Pilotes: tu casa empieza bajo tierra",
+       "formato": "Reel 9:16",
+       "alt": "Portada del reel Pilotes: tu casa empieza bajo tierra de Neorigen.",
+       "video": "video/neo-pilotes.mp4",
+       "nota": "Cómo se apoya una casa Neorigen sobre el terreno."
+      },
+      {
+       "src": "img3/neorigen/neo-casa-peumo-portada.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Peumo",
+       "formato": "Reel 9:16",
+       "alt": "Portada del reel Casa Peumo de Neorigen.",
+       "video": "video/neo-casa-peumo.mp4",
+       "nota": "Recorrido por el modelo y sus metros cuadrados."
+      },
+      {
+       "src": "img3/neorigen/neo-casa-huingan-portada.webp",
+       "w": 900,
+       "h": 1600,
+       "nombre": "Casa Huingán en 3D",
+       "formato": "Historia 9:16",
+       "alt": "Portada del reel Casa Huingán en 3D de Neorigen.",
+       "video": "video/neo-casa-huingan.mp4",
+       "nota": "Video 3D del modelo, con su planta."
+      },
+      {
+       "src": "img3/neorigen/neo-itahue-portada.webp",
+       "w": 720,
+       "h": 896,
+       "nombre": "Madera que toma forma",
+       "formato": "Reel 4:5",
+       "alt": "Portada del reel Madera que toma forma de Neorigen.",
+       "video": "video/neo-itahue.mp4",
+       "nota": "Fotos de obra editadas de una casa en Itahue."
+      }
+     ]
+    },
+    {
+     "titulo": "10 puntos antes de comprar tu terreno",
+     "texto": [
+      "Un carrusel informativo de diez láminas: papeles, normativa, servicios y el terreno mismo. Cada lámina tiene su propio layout."
+     ],
+     "piezas": [
+      {
+       "src": "img3/neorigen/terreno-01.webp",
        "w": 1080,
-       "h": 1080,
-       "nombre": "Cierre",
-       "formato": "Carrusel 1:1",
-       "alt": "Cierre. Carrusel 1:1"
+       "h": 1350,
+       "nombre": "01 · Portada",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 1 de 10 del carrusel sobre comprar un terreno: Antes de comprar tu terreno."
+      },
+      {
+       "src": "img3/neorigen/terreno-02.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "02 · Por qué importa",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 2 de 10 del carrusel sobre comprar un terreno: Un buen terreno te ahorra tiempo y presupuesto."
+      },
+      {
+       "src": "img3/neorigen/terreno-03.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "03 · Papeles",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 3 de 10 del carrusel sobre comprar un terreno: Dominio, cargas y subdivisión aprobada."
+      },
+      {
+       "src": "img3/neorigen/terreno-04.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "04 · Normativa",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 4 de 10 del carrusel sobre comprar un terreno: Qué se puede construir ahí."
+      },
+      {
+       "src": "img3/neorigen/terreno-05.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "05 · Servicios",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 5 de 10 del carrusel sobre comprar un terreno: Agua y electricidad."
+      },
+      {
+       "src": "img3/neorigen/terreno-06.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "06 · Acceso",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 6 de 10 del carrusel sobre comprar un terreno: Acceso todo el año."
+      },
+      {
+       "src": "img3/neorigen/terreno-07.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "07 · El terreno",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 7 de 10 del carrusel sobre comprar un terreno: Una pendiente no es un problema."
+      },
+      {
+       "src": "img3/neorigen/terreno-08.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "08 · Orientación",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 8 de 10 del carrusel sobre comprar un terreno: En Chile, el norte trae el sol."
+      },
+      {
+       "src": "img3/neorigen/terreno-09.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "09 · Riesgos naturales",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 9 de 10 del carrusel sobre comprar un terreno: Inundación, remoción en masa, plantaciones e incendios."
+      },
+      {
+       "src": "img3/neorigen/terreno-10.webp",
+       "w": 1080,
+       "h": 1350,
+       "nombre": "10 · Cierre",
+       "formato": "Carrusel 4:5",
+       "alt": "Lámina 10 de 10 del carrusel sobre comprar un terreno: ¿Ya tienes un terreno en la mira?."
       }
      ]
     },
     {
      "titulo": "Plataforma para el equipo de marketing",
      "texto": [
-      "Cronograma de contenido: una aplicación web que hice para planificar, revisar y aprobar las piezas con el equipo de Neorigen. Tiene calendario por mes, carta Gantt, línea de tiempo y planilla de detalle, un feed para revisar cada pieza, la carpeta de entregas y un panel de seguimiento.",
+      "Cronograma de contenido: una aplicación web que hice para planificar, revisar y aprobar las piezas con el equipo de Neorigen. Tiene calendario por mes, carta Gantt, línea de tiempo y planilla de detalle, un feed para revisar cada pieza, un panel de seguimiento y la carpeta de entregas.",
       "Las capturas muestran solo piezas ya publicadas."
      ],
      "piezas": [
       {
        "src": "img3/neorigen/plataforma-01.webp",
-       "w": 1600,
-       "h": 1000,
+       "w": 1920,
+       "h": 1200,
        "nombre": "Calendario por mes",
+       "formato": "Aplicación web",
        "alt": "Captura de la plataforma Cronograma de contenido: calendario por mes.",
-       "formato": "Aplicación web"
+       "nota": "Octubre, con las piezas de cada día"
       },
       {
        "src": "img3/neorigen/plataforma-02.webp",
-       "w": 1600,
-       "h": 1000,
+       "w": 1920,
+       "h": 1200,
        "nombre": "Carta Gantt por campaña",
-       "alt": "Captura de la plataforma Cronograma de contenido: carta gantt por campaña.",
-       "formato": "Aplicación web"
+       "formato": "Aplicación web",
+       "alt": "Captura de la plataforma Cronograma de contenido: carta gantt por campaña."
       },
       {
        "src": "img3/neorigen/plataforma-03.webp",
-       "w": 1600,
-       "h": 1000,
+       "w": 1920,
+       "h": 1200,
        "nombre": "Línea de tiempo",
-       "alt": "Captura de la plataforma Cronograma de contenido: línea de tiempo.",
-       "formato": "Aplicación web"
+       "formato": "Aplicación web",
+       "alt": "Captura de la plataforma Cronograma de contenido: línea de tiempo."
       },
       {
        "src": "img3/neorigen/plataforma-04.webp",
-       "w": 1600,
-       "h": 1000,
+       "w": 1920,
+       "h": 1200,
        "nombre": "Detalle: la planilla para imprimir o bajar",
-       "alt": "Captura de la plataforma Cronograma de contenido: detalle: la planilla para imprimir o bajar.",
-       "formato": "Aplicación web"
+       "formato": "Aplicación web",
+       "alt": "Captura de la plataforma Cronograma de contenido: detalle: la planilla para imprimir o bajar."
       },
       {
        "src": "img3/neorigen/plataforma-05.webp",
-       "w": 1600,
-       "h": 1000,
+       "w": 1920,
+       "h": 1200,
        "nombre": "Feed: revisión de cada pieza",
-       "alt": "Captura de la plataforma Cronograma de contenido: feed: revisión de cada pieza.",
-       "formato": "Aplicación web"
+       "formato": "Aplicación web",
+       "alt": "Captura de la plataforma Cronograma de contenido: feed: revisión de cada pieza."
       },
       {
        "src": "img3/neorigen/plataforma-06.webp",
-       "w": 1600,
-       "h": 1000,
-       "nombre": "Marca: recursos compartidos",
-       "alt": "Captura de la plataforma Cronograma de contenido: marca: recursos compartidos.",
-       "formato": "Aplicación web"
+       "w": 1920,
+       "h": 1200,
+       "nombre": "Panel de seguimiento",
+       "formato": "Aplicación web",
+       "alt": "Captura de la plataforma Cronograma de contenido: panel de seguimiento."
       },
       {
        "src": "img3/neorigen/plataforma-07.webp",
-       "w": 1600,
-       "h": 1000,
-       "nombre": "Panel de seguimiento",
-       "alt": "Captura de la plataforma Cronograma de contenido: panel de seguimiento.",
-       "formato": "Aplicación web"
-      },
-      {
-       "src": "img3/neorigen/plataforma-08.webp",
-       "w": 1600,
-       "h": 1000,
+       "w": 1920,
+       "h": 1200,
        "nombre": "Entregas",
-       "alt": "Captura de la plataforma Cronograma de contenido: entregas.",
-       "formato": "Aplicación web"
+       "formato": "Aplicación web",
+       "alt": "Captura de la plataforma Cronograma de contenido: entregas."
       }
      ]
     }
