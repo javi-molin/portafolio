@@ -2407,8 +2407,9 @@ window.PORTAFOLIO = {
      "listaTitulo": "Decisiones"
     },
     {
-     "titulo": "Manual de marca",
+     "titulo": "Identidad y manual de marca",
      "texto": [
+      "Un manual corto y una biblioteca para que Muralia arme sus piezas sola: isotipo, siete colores de obra, dos tipografías, 124 vectores (iconos, franjas, marcos, señalética de plano y viñetas), dos patrones y 52 fondos de pantalla.",
       "Cuatro láminas, una por decisión: qué es la marca, cómo se usa el logo, con qué colores y con qué tipografías. Es lo que se le pasa a un proveedor o a una imprenta antes de empezar."
      ],
      "piezas": [
@@ -2437,59 +2438,38 @@ window.PORTAFOLIO = {
        "alt": "Colores. Siete colores en hexadecimal"
       },
       {
-       "src": "img3/muralia/manual_04.webp",
-       "w": 1132,
-       "h": 1600,
-       "nombre": "Tipografía",
-       "formato": "Bebas Neue y Archivo",
-       "alt": "Tipografía. Bebas Neue y Archivo"
-      }
-     ]
-    },
-    {
-     "titulo": "Siete colores de obra",
-     "piezas": [
-      {
        "src": "img3/muralia/lib-colores.webp",
        "w": 2000,
        "h": 1125,
        "nombre": "Paleta de obra",
        "formato": "7 colores",
        "alt": "Paleta de Muralia: arcilla, arcilla oscura, grafito, musgo, yeso, papel y filete, con sus códigos."
-      }
-     ]
-    },
-    {
-     "titulo": "Iconos",
-     "texto": [
-      "Los productos, las propiedades técnicas, los sectores donde Muralia trabaja y los datos de contacto, dibujados con la misma regla: grilla de 48 × 48, trazo de 3, esquinas rectas y remates cuadrados. Así un icono de lana y uno de teléfono pesan lo mismo dentro de una lámina.",
-      "Todos se entregan en SVG con un solo color, para que la empresa los pegue en una cotización, en un catálogo o en el sitio sin pedir versiones nuevas."
-     ],
-     "piezas": [
+      },
+      {
+       "src": "img3/muralia/manual_04.webp",
+       "w": 1132,
+       "h": 1600,
+       "nombre": "Tipografía",
+       "formato": "Bebas Neue y Archivo",
+       "alt": "Tipografía. Bebas Neue y Archivo"
+      },
       {
        "src": "img3/muralia/lib-iconos.webp",
        "w": 2000,
        "h": 1211,
        "nombre": "Iconos",
        "formato": "54 vectores SVG",
-       "alt": "Los 54 iconos de Muralia en una grilla: productos, propiedades, sectores y contacto."
-      }
-     ]
-    },
-    {
-     "titulo": "Franjas, marcos y señalética",
-     "texto": [
-      "Lo que arma la página: bandas para cabeceras y pies, marcos para encuadrar fotos y datos, símbolos tomados del dibujo técnico de arquitectura, y las viñetas y flechas de las listas. Las franjas se repiten al infinito, así que sirven igual en un story que en un pendón.",
-      "Las setenta piezas salen del mismo marco cuadrado del isotipo y del aparejo de ladrillos, de modo que cualquier combinación se ve de la misma familia."
-     ],
-     "piezas": [
+       "alt": "Los 54 iconos de Muralia en una grilla: productos, propiedades, sectores y contacto.",
+       "nota": "Los productos, las propiedades técnicas, los sectores donde Muralia trabaja y los datos de contacto, dibujados con la misma regla: grilla de 48 × 48, trazo de 3, esquinas rectas y remates cuadrados."
+      },
       {
        "src": "img3/muralia/lib-franjas.webp",
        "w": 2000,
        "h": 1345,
        "nombre": "Franjas, marcos y contenedores",
        "formato": "37 vectores SVG",
-       "alt": "Las 23 franjas y los 14 marcos de la biblioteca de Muralia."
+       "alt": "Las 23 franjas y los 14 marcos de la biblioteca de Muralia.",
+       "nota": "Lo que arma la página: bandas para cabeceras y pies, marcos para encuadrar fotos y datos, símbolos tomados del dibujo técnico de arquitectura, y las viñetas y flechas de las listas."
       },
       {
        "src": "img3/muralia/lib-senaletica.webp",
@@ -2498,22 +2478,15 @@ window.PORTAFOLIO = {
        "nombre": "Señalética de plano, viñetas y marcadores",
        "formato": "33 vectores SVG",
        "alt": "Símbolos de dibujo técnico, viñetas, flechas, separadores y marcadores de Muralia."
-      }
-     ]
-    },
-    {
-     "titulo": "Patrones de marca",
-     "texto": [
-      "Patrones dibujados a partir de los materiales: el aparejo de ladrillos y la curva de la lana aislante. De estos dos sale el resto de los fondos."
-     ],
-     "piezas": [
+      },
       {
        "src": "img3/muralia/patron_aparejo.webp",
        "w": 1600,
        "h": 900,
        "nombre": "Aparejo",
        "formato": "Fondo 1920 × 1080",
-       "alt": "Aparejo. Fondo 1920 × 1080"
+       "alt": "Aparejo. Fondo 1920 × 1080",
+       "nota": "Patrones dibujados a partir de los materiales: el aparejo de ladrillos y la curva de la lana aislante."
       },
       {
        "src": "img3/muralia/patron_lana.webp",
@@ -2522,30 +2495,23 @@ window.PORTAFOLIO = {
        "nombre": "Lana",
        "formato": "Fondo 1920 × 1080",
        "alt": "Lana. Fondo 1920 × 1080"
-      }
-     ]
-    },
-    {
-     "titulo": "Fondos de pantalla",
-     "texto": [
-      "Cincuenta y dos fondos sin logo, cada uno en vertical 1080 × 1920 y horizontal 1920 × 1080: aparejos, achurados, cortes de muro, ejes de plano, ondas acústicas y curvas de temperatura. Sirven de fondo para una historia, de portada de una presentación o de pantalla de un computador en la oficina.",
-      "Van en un solo archivo comprimido con los PNG listos, y en SVG para recolorearlos con cualquiera de los siete colores de la marca."
-     ],
-     "piezas": [
+      },
       {
        "src": "img3/muralia/lib-fondos.webp",
        "w": 2000,
        "h": 1144,
        "nombre": "Fondos de pantalla",
        "formato": "52 fondos · 1080 × 1920",
-       "alt": "Hoja de contactos con los 52 fondos de pantalla de Muralia."
+       "alt": "Hoja de contactos con los 52 fondos de pantalla de Muralia.",
+       "nota": "Cincuenta y dos fondos sin logo, cada uno en vertical 1080 × 1920 y horizontal 1920 × 1080: aparejos, achurados, cortes de muro, ejes de plano, ondas acústicas y curvas de temperatura."
       }
      ]
     },
     {
-     "titulo": "Carrusel de apertura",
+     "titulo": "Carruseles para Instagram",
      "texto": [
-      "Cada carrusel se entrega en láminas para Instagram y como PDF para subir a LinkedIn como documento."
+      "Cada carrusel se entrega en láminas para Instagram y como PDF para subir a LinkedIn como documento.",
+      "Las portadas rotan entre arcilla, grafito, yeso y musgo, para que el perfil se lea ordenado. Cada una usa un icono y una franja de la biblioteca, nunca una ilustración suelta."
      ],
      "piezas": [
       {
@@ -2595,15 +2561,7 @@ window.PORTAFOLIO = {
        "nombre": "Cotiza tu obra",
        "formato": "6 de 6",
        "alt": "Cotiza tu obra. 6 de 6"
-      }
-     ]
-    },
-    {
-     "titulo": "Doce carruseles, un ciclo de color",
-     "texto": [
-      "Las portadas rotan entre arcilla, grafito, yeso y musgo, para que el perfil se lea ordenado. Cada una usa un icono y una franja de la biblioteca, nunca una ilustración suelta."
-     ],
-     "piezas": [
+      },
       {
        "src": "img3/muralia/yeso_01.webp",
        "w": 1080,
@@ -2765,18 +2723,19 @@ window.PORTAFOLIO = {
    "slug": "neorigen",
    "grupo": "freelance",
    "titulo": "Neorigen",
-   "tipo": "Sitio web, redes sociales y plataforma",
+   "tipo": "Marca, sitio web, redes sociales y plataforma",
    "cliente": "Neorigen",
    "ano": "2026",
-   "rol": "Sitio web, contenido para Instagram (carruseles, historias y reels) y plataforma de cronograma para el equipo de marketing",
+   "rol": "Manual de marca, sitio web, contenido para Instagram (carruseles, historias y reels) y plataforma de cronograma para el equipo de marketing",
    "formatos": [
+    "Manual de marca",
     "Sitio web",
     "Carruseles 4:5",
     "Historias 9:16",
     "Reels",
     "Plataforma de cronograma de contenido"
    ],
-   "resumen": "Neorigen diseña y construye casas prediseñadas sustentables, levantadas en el terreno de cada cliente y entregadas llave en mano. Hago su sitio neorigen.cl y su contenido de Instagram: carruseles, historias de cada modelo y reels. También hice la plataforma con que el equipo de marketing organiza el cronograma de contenido.",
+   "resumen": "Neorigen diseña y construye casas prediseñadas sustentables, levantadas en el terreno de cada cliente y entregadas llave en mano. Hice su manual de marca, su sitio neorigen.cl y su contenido de Instagram: carruseles, historias de cada modelo y reels. También hice la plataforma con que el equipo de marketing organiza el cronograma de contenido.",
    "creditos": [
     "Fotos de obra y renders: Neorigen. Logotipo existente de la marca."
    ],
@@ -2807,6 +2766,62 @@ window.PORTAFOLIO = {
       }
      ],
      "listaTitulo": "Decisiones"
+    },
+    {
+     "titulo": "Manual de marca",
+     "texto": [
+      "El manual documenta el logotipo existente y define todo lo demás: color, tipografía, fotografía, tono y el nombre de cada modelo."
+     ],
+     "piezas": [
+      {
+       "src": "img3/neorigen/manual_01.webp",
+       "w": 1600,
+       "h": 899,
+       "nombre": "Portada",
+       "formato": "Manual de marca, versión 1",
+       "alt": "Portada. Manual de marca, versión 1"
+      },
+      {
+       "src": "img3/neorigen/manual_04.webp",
+       "w": 1600,
+       "h": 899,
+       "nombre": "Logotipo",
+       "formato": "Versiones del isotipo y el lockup",
+       "alt": "Logotipo. Versiones del isotipo y el lockup"
+      },
+      {
+       "src": "img3/neorigen/manual_05.webp",
+       "w": 1600,
+       "h": 899,
+       "nombre": "Uso del logo",
+       "formato": "Espacio de resguardo y qué no hacer",
+       "alt": "Uso del logo. Espacio de resguardo y qué no hacer"
+      },
+      {
+       "src": "img3/neorigen/manual_06.webp",
+       "w": 1600,
+       "h": 899,
+       "nombre": "Color",
+       "formato": "Azul Origen y escala derivada",
+       "alt": "Color. Azul Origen y escala derivada"
+      },
+      {
+       "src": "img3/neorigen/manual_07.webp",
+       "w": 1600,
+       "h": 899,
+       "nombre": "Tipografía",
+       "formato": "Fraunces, Work Sans e IBM Plex Mono",
+       "alt": "Tipografía. Fraunces, Work Sans e IBM Plex Mono"
+      },
+      {
+       "src": "img3/neorigen/manual_10.webp",
+       "w": 1600,
+       "h": 899,
+       "nombre": "Uso en redes",
+       "formato": "El logo en la esquina opuesta al texto",
+       "alt": "Uso en redes. El logo en la esquina opuesta al texto"
+      }
+     ]
     },
     {
      "titulo": "Carrusel: estrenamos nueva web",

@@ -299,7 +299,8 @@ ul, ol { padding: 0; list-style: none; }
 .nota__pie, .color { font-size: 13px; }
 .rotulo h1 .px { font-family: var(--pixel); font-weight: 600; letter-spacing: -0.03em; }
 .icono, .icono.es-actual span, .nota, .ventana, .ventana__cerrar i, .barra__marca i, .boton, .sub__pestana, .sub__cuerpo, .tab, .lamina__flecha, .mini, .color, .sobremi__yo img, .chips li, :focus-visible { border-radius: 0; }
-.ventana__cerrar i { width: 16px; height: 16px; }
+.ventana__cerrar i { width: 18px; height: 18px; display: inline-flex; align-items: center; justify-content: center; color: var(--tinta); }
+.ventana__cerrar svg { display: block; }
 .ventana__barra::after { content: ''; flex: 1 1 40px; height: 14px; margin-left: 8px; background: repeating-linear-gradient(to bottom, var(--tinta) 0 1.5px, transparent 1.5px 5px); }
 .fondo::after {
   content: ''; position: absolute; inset: 0;
