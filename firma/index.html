@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Firma de correo · Javi Molin</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+@font-face { font-family: 'Geist'; src: url('fuentes/geist-latin-wght-normal.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: 'Pixelify Sans'; src: url('fuentes/pixelify-sans-latin-wght-normal.woff2') format('woff2'); font-weight: 400 700; font-display: swap; unicode-range: U+0-2F, U+3A-10FFFF; }
+@font-face { font-family: 'Jersey 10'; src: url('fuentes/jersey-10-latin-400-normal.woff2') format('woff2'); font-display: swap; }
+:root { --tinta:#121212; --tinta-2:#5b5e66; --acento:#ffd84d; --base:#f6f1ec; --borde:1.5px solid var(--tinta);
+  --sans:'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif; --pixel:'Pixelify Sans', ui-monospace, Menlo, monospace; }
+*, *::before, *::after { box-sizing:border-box; font-variant-ligatures:none; font-feature-settings:"liga" 0, "calt" 0; }
+html { background:var(--base); }
+body { margin:0; color:var(--tinta); font:15px/1.55 var(--sans); -webkit-font-smoothing:antialiased; font-variant-ligatures:none;
+  background:
+    radial-gradient(40vmax 40vmax at 0% 0%, #ffa9c6aa, transparent 70%),
+    radial-gradient(40vmax 40vmax at 100% 10%, #b9aeffaa, transparent 70%),
+    radial-gradient(40vmax 40vmax at 20% 100%, #ffc58faa, transparent 70%),
+    radial-gradient(40vmax 40vmax at 100% 100%, #9fdcffaa, transparent 70%), var(--base);
+  min-height:100vh; }
+a { color:inherit; text-underline-offset:3px; }
+h1, h2, h3, p { margin:0; }
+.px { font-family:var(--pixel); letter-spacing:.01em; }
+.barra { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; gap:12px; padding:9px 20px;
+  border-bottom:1px solid var(--tinta); background:rgba(255,255,255,.55); -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); font-size:14px; }
+.barra i { display:inline-block; width:10px; height:10px; background:var(--acento); border:1px solid var(--tinta); margin-right:8px; vertical-align:-1px; }
+main { max-width:980px; margin:0 auto; padding:40px 20px 80px; }
+.rotulo { display:grid; gap:4px; margin-bottom:28px; }
+.rotulo h1 { font-family:'Jersey 10', var(--pixel); font-weight:400; font-size:clamp(56px, 11vw, 120px); line-height:.8; }
+.rotulo p { font-family:var(--pixel); font-size:14px; }
+.ventana { background:#fff; border:var(--borde); box-shadow:4px 4px 0 var(--tinta); margin-bottom:28px; }
+.ventana__barra { display:flex; align-items:center; gap:8px; padding:7px 12px; background:var(--acento); border-bottom:var(--borde); font-family:var(--pixel); font-size:14px; }
+.ventana__barra::after { content:''; flex:1 1 40px; height:12px; margin-left:8px; background:repeating-linear-gradient(to bottom, var(--tinta) 0 1.5px, transparent 1.5px 5px); }
+.ventana__cuerpo { padding:22px; }
+.versiones { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:22px; }
+.version { border:var(--borde); background:#fff; display:flex; flex-direction:column; }
+.version__cabeza { display:flex; justify-content:space-between; align-items:baseline; gap:8px; padding:10px 14px; border-bottom:var(--borde); }
+.version__cabeza h3 { font-family:var(--pixel); font-weight:500; font-size:15px; }
+.version__cabeza span { font-family:var(--pixel); font-size:12px; color:var(--tinta-2); }
+.version__vista { padding:20px 16px; background:#fbfaf8; flex:1; overflow:hidden; }
+.version__vista .correo { font:13px/1.5 Arial, Helvetica, sans-serif; color:#222; margin-bottom:14px; }
+.version__acciones { display:flex; flex-wrap:wrap; gap:8px; padding:12px 14px; border-top:var(--borde); }
+.boton { appearance:none; cursor:pointer; font-family:var(--pixel); font-size:14px; padding:7px 12px; border:var(--borde); background:var(--acento); color:var(--tinta); box-shadow:2px 2px 0 var(--tinta); text-decoration:none; }
+.boton:active { transform:translate(2px, 2px); box-shadow:none; }
+.boton--suave { background:#fff; }
+.boton.ok { background:#2fbf71; color:#fff; }
+.texto-plano { white-space:pre; font:13px/1.6 ui-monospace, Menlo, monospace; background:#fbfaf8; border:var(--borde); padding:14px 16px; overflow:auto; }
+.tabs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px; }
+.tab { cursor:pointer; font-family:var(--pixel); font-size:14px; padding:6px 12px; border:var(--borde); background:#fff; }
+.tab[aria-selected="true"] { background:var(--tinta); color:#fff; }
+.panel { display:none; } .panel.activo { display:block; }
+ol.pasos { margin:0; padding-left:0; list-style:none; counter-reset:paso; display:grid; gap:12px; }
+ol.pasos > li { counter-increment:paso; position:relative; padding-left:42px; }
+ol.pasos > li::before { content:counter(paso); position:absolute; left:0; top:-1px; width:28px; height:28px; display:grid; place-items:center; font-family:var(--pixel); font-size:14px; border:var(--borde); background:var(--acento); }
+.nota { margin-top:16px; padding:12px 14px; border:1.5px dashed var(--tinta); background:#fffbe6; font-size:14px; }
+.nota b { font-weight:600; }
+kbd, code { font-family:ui-monospace, Menlo, monospace; font-size:.9em; background:#f1f1ee; border:1px solid #d5d7dc; padding:0 5px; }
+.tabla { width:100%; border-collapse:collapse; font-size:14px; }
+.tabla th, .tabla td { text-align:left; padding:9px 10px; border-bottom:1px solid #d5d7dc; vertical-align:top; }
+.tabla th { font-family:var(--pixel); font-weight:500; border-bottom:var(--borde); }
+footer { font-family:var(--pixel); font-size:13px; color:var(--tinta-2); }
+@media (max-width:600px) { main { padding-top:24px; } .ventana__cuerpo { padding:16px; } }
+</style>
+</head>
+<body>
+<header class="barra px"><span><i></i>Javi Molin</span><span>firma/</span></header>
+<main>
+  <div class="rotulo">
+    <p>Javi Molin · molin.cl</p>
+    <h1>Firma de correo</h1>
+  </div>
+
+  <section class="ventana" aria-labelledby="t-versiones">
+    <div class="ventana__barra"><span id="t-versiones">versiones.txt</span></div>
+    <div class="ventana__cuerpo">
+      <div class="versiones" id="versiones"></div>
+      <h3 class="px" style="font-weight:500;margin:26px 0 10px">Texto simple (apps que no aceptan imágenes)</h3>
+      <div class="texto-plano" id="plano"></div>
+      <div style="margin-top:10px"><button class="boton boton--suave" data-copiar-plano>Copiar texto simple</button></div>
+    </div>
+  </section>
+
+  <section class="ventana" aria-labelledby="t-guia">
+    <div class="ventana__barra"><span id="t-guia">instalar.txt</span></div>
+    <div class="ventana__cuerpo">
+      <div class="nota" style="margin:0 0 18px"><b>Combinación recomendada:</b> Completa animada para correos nuevos y Compacta estática para respuestas y reenvíos, así los hilos largos no se llenan de movimiento.</div>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-panel="gmail-web">Gmail · computador</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="gmail-app">Gmail · celular</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="iphone">Mail · iPhone / iPad</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="mac">Mail · Mac</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="outlook">Outlook</button>
+      </div>
+
+      <div class="panel activo" id="gmail-web">
+        <ol class="pasos">
+          <li>Abre esta página (<b>molin.cl/firma</b>) en el computador y toca <b>Copiar firma</b> en <b>Completa · animada</b>.</li>
+          <li>En Gmail ve a <b>⚙ Configuración → Ver todos los ajustes → General → Firma</b> y toca <b>+ Crear</b>. Ponle de nombre «Completa».</li>
+          <li>Haz clic en el recuadro y pega con <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>V</kbd>. Tiene que aparecer la imagen, no un cuadro vacío.</li>
+          <li>Repite con <b>Compacta · estática</b> y ponle de nombre «Compacta».</li>
+          <li>En <b>Valores predeterminados de firma</b> elige: <b>Para correos nuevos → Completa</b> y <b>Al responder o reenviar → Compacta</b>.</li>
+          <li>Marca <b>«Insertar esta firma antes del texto citado en las respuestas»</b> para que la firma no quede escondida bajo el hilo.</li>
+          <li>Baja hasta el final de la página y toca <b>Guardar cambios</b>. Envíate un correo de prueba.</li>
+        </ol>
+        <div class="nota">No subas la imagen con el botón «Insertar imagen» de Gmail: llega como adjunto y aparece el clip en cada correo. Pegarla desde aquí la deja enlazada a molin.cl, que es más liviano y se ve igual en todas partes.</div>
+      </div>
+
+      <div class="panel" id="gmail-app">
+        <ol class="pasos">
+          <li>Primero configúrala en Gmail del computador (pestaña anterior).</li>
+          <li>En la app de Gmail toca <b>☰ → Configuración</b> y elige tu cuenta.</li>
+          <li><b>Android:</b> abre <b>Firma para móviles</b> y déjala <b>vacía</b>. <b>iPhone:</b> entra a <b>Configuración de la firma</b> y deja <b>apagada</b> la firma para móviles.</li>
+          <li>Así la app usa la firma con imagen que guardaste en el computador. La app solo deja escribir firmas de texto simple, así que si escribes una ahí, reemplaza a la de imagen.</li>
+          <li>Envíate un correo de prueba desde el celular. Puede que no veas la firma mientras escribes, pero debería aparecer en el correo que recibes.</li>
+        </ol>
+        <div class="nota">Si la imagen no aparece en tus correos de prueba, usa el <b>texto simple</b> de arriba como firma para móviles: es la opción segura.</div>
+      </div>
+
+      <div class="panel" id="iphone">
+        <ol class="pasos">
+          <li>En el iPhone abre <b>molin.cl/firma</b> en Safari y toca <b>Copiar firma</b> en <b>Compacta · estática</b> (en pantallas chicas se lee mejor).</li>
+          <li>Ve a <b>Ajustes → Apps → Mail → Firma</b>. Si tienes varias cuentas, elige <b>Por cuenta</b> y usa la de Gmail.</li>
+          <li>Borra «Enviado desde mi iPhone», mantén presionado y toca <b>Pegar</b>.</li>
+          <li>Si se ve desarmada, <b>agita el iPhone</b> y toca <b>Deshacer</b> en «Deshacer cambio de atributos». También sirve deslizar con tres dedos hacia la izquierda. Si agitar no hace nada, actívalo en <b>Ajustes → Accesibilidad → Tocar → Agitar para deshacer</b>.</li>
+          <li>Sal de Ajustes y envíate un correo de prueba.</li>
+        </ol>
+        <div class="nota">Si el botón no copia bien desde Safari: desde Gmail del computador envíate un correo con la firma, ábrelo en la app Mail del iPhone, selecciona la firma completa, cópiala y pégala en Ajustes como en el paso 3.</div>
+      </div>
+
+      <div class="panel" id="mac">
+        <ol class="pasos">
+          <li>Abre <b>molin.cl/firma</b> en Safari y toca <b>Copiar firma</b> en la versión que quieras.</li>
+          <li>En Mail ve a <b>Mail → Ajustes → Firmas</b>, elige tu cuenta y toca <b>+</b>. Ponle nombre.</li>
+          <li><b>Desmarca</b> «Usar siempre mi tipografía predeterminada del mensaje» y pega en la columna de la derecha.</li>
+          <li>Abajo, en <b>Elegir firma</b>, deja la que usarás por defecto. Cierra la ventana y envíate un correo de prueba.</li>
+        </ol>
+        <div class="nota">Es normal que la vista previa de Ajustes muestre un cuadro vacío o un signo de pregunta. Las imágenes se cargan desde molin.cl al escribir un correo.</div>
+      </div>
+
+      <div class="panel" id="outlook">
+        <ol class="pasos">
+          <li>Copia la firma desde esta página.</li>
+          <li><b>Outlook web o el nuevo Outlook:</b> ⚙ <b>Configuración → Cuentas → Firmas → + Nueva firma</b>, pega y guarda. Abajo elige cuál va en mensajes nuevos y cuál en respuestas.</li>
+          <li><b>Outlook clásico (Windows):</b> <b>Archivo → Opciones → Correo → Firmas → Nueva</b>, pega y asigna las firmas predeterminadas.</li>
+        </ol>
+        <div class="nota">Outlook clásico para Windows muestra solo el primer cuadro de los GIF. Las firmas animadas están hechas para que ese primer cuadro sea la firma completa, así que se ven bien igual.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ventana" aria-labelledby="t-cual">
+    <div class="ventana__barra"><span id="t-cual">cual-usar.txt</span></div>
+    <div class="ventana__cuerpo">
+      <table class="tabla">
+        <thead><tr><th>Dónde</th><th>Versión</th><th>Por qué</th></tr></thead>
+        <tbody>
+          <tr><td>Correos nuevos (postulaciones, clientes)</td><td>Completa · animada</td><td>Foto, nombre, correo, teléfono y molin.cl.</td></tr>
+          <tr><td>Respuestas y reenvíos</td><td>Compacta · estática</td><td>Ocupa poco y no se repite pesada en cada mensaje del hilo.</td></tr>
+          <tr><td>Correos formales (bancos, trámites)</td><td>Completa · estática</td><td>La misma imagen, pero quieta.</td></tr>
+          <tr><td>Apps que solo aceptan texto</td><td>Texto simple</td><td>Siempre funciona.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>Imágenes servidas desde molin.cl/firma · si cambias algo, reemplaza el archivo con el mismo nombre y todas las firmas se actualizan solas.</footer>
+</main>
+
+<script>
+const BASE = 'https://molin.cl/firma/';
+const VERSIONES = [
+  { id:'completa-gif', nombre:'Completa', tipo:'animada', archivo:'firma-completa.gif', w:480, h:140 },
+  { id:'completa-png', nombre:'Completa', tipo:'estática', archivo:'firma-completa.png', w:480, h:140 },
+  { id:'compacta-gif', nombre:'Compacta', tipo:'animada', archivo:'firma-compacta.gif', w:340, h:84 },
+  { id:'compacta-png', nombre:'Compacta', tipo:'estática', archivo:'firma-compacta.png', w:340, h:84 },
+];
+const PLANO = 'Javi Molin\nDiseñadora Integral UC\njavimolin@gmail.com · +56 9 6630 3974\nmolin.cl · linkedin.com/in/javimolin';
+
+function firmaHTML(v, base) {
+  const link = 'color:#121212;text-decoration:none;';
+  return '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">'
+    + '<tr><td style="padding:0;"><a href="https://molin.cl" target="_blank" style="text-decoration:none;">'
+    + '<img src="' + base + v.archivo + '" width="' + v.w + '" height="' + v.h + '" alt="Javi Molin · Diseñadora Integral UC · molin.cl · javimolin@gmail.com · +56 9 6630 3974" '
+    + 'style="display:block;border:0;outline:none;width:' + v.w + 'px;max-width:100%;height:auto;"></a></td></tr>'
+    + '</table>';
+}
+
+// En molin.cl las imágenes se cargan desde la misma carpeta; al copiar siempre van con la dirección completa.
+const vistaBase = location.hostname.endsWith('molin.cl') ? BASE : '';
+const cont = document.getElementById('versiones');
+VERSIONES.forEach(v => {
+  const el = document.createElement('article');
+  el.className = 'version';
+  el.innerHTML = '<div class="version__cabeza"><h3>' + v.nombre + '</h3><span>' + v.tipo + '</span></div>'
+    + '<div class="version__vista"><p class="correo">Saludos,</p>' + firmaHTML(v, vistaBase) + '</div>'
+    + '<div class="version__acciones"><button class="boton" data-copiar="' + v.id + '">Copiar firma</button>'
+    + '<button class="boton boton--suave" data-codigo="' + v.id + '">Copiar código</button>'
+    + '<a class="boton boton--suave" href="' + v.archivo + '" download>Descargar ' + v.archivo.split('.').pop().toUpperCase() + '</a></div>';
+  cont.appendChild(el);
+});
+document.getElementById('plano').textContent = PLANO;
+
+function avisar(btn, txt) {
+  const antes = btn.textContent; btn.textContent = txt; btn.classList.add('ok');
+  setTimeout(() => { btn.textContent = antes; btn.classList.remove('ok'); }, 1800);
+}
+async function copiarRico(html, plano) {
+  try {
+    if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+      await navigator.clipboard.write([new ClipboardItem({
+        'text/html': new Blob([html], { type:'text/html' }),
+        'text/plain': new Blob([plano], { type:'text/plain' }) })]);
+      return true;
+    }
+  } catch (e) {}
+  // Respaldo: seleccionar un bloque oculto y copiar
+  const tmp = document.createElement('div');
+  tmp.style.cssText = 'position:fixed;left:-9999px;top:0;';
+  tmp.innerHTML = html; document.body.appendChild(tmp);
+  const r = document.createRange(); r.selectNodeContents(tmp);
+  const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  let ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+  s.removeAllRanges(); tmp.remove(); return ok;
+}
+async function copiarTexto(t) {
+  try { await navigator.clipboard.writeText(t); return true; } catch (e) {
+    const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch (e2) {} ta.remove(); return ok; }
+}
+document.addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.copiar) {
+    const v = VERSIONES.find(x => x.id === b.dataset.copiar);
+    avisar(b, await copiarRico(firmaHTML(v, BASE), PLANO) ? 'Copiada ✓' : 'No se pudo copiar');
+  } else if (b.dataset.codigo) {
+    const v = VERSIONES.find(x => x.id === b.dataset.codigo);
+    avisar(b, await copiarTexto(firmaHTML(v, BASE)) ? 'Código copiado ✓' : 'No se pudo copiar');
+  } else if ('copiarPlano' in b.dataset) {
+    avisar(b, await copiarTexto(PLANO) ? 'Copiado ✓' : 'No se pudo copiar');
+  } else if (b.dataset.panel) {
+    document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t === b));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('activo', p.id === b.dataset.panel));
+  }
+});
+</script>
+</body>
+</html>
