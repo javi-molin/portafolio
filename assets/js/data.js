@@ -471,6 +471,14 @@ window.PORTAFOLIO = {
        "alt": "Portada de Campeones Sin Límites hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
+       "src": "img3/portadas/campeones-sin-limites-b.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada, versión con franjas de vagón",
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada alternativa de Campeones Sin Límites: el logo en blanco sobre magenta y tres franjas de vagón de Metro con los deportistas y las marcas aliadas."
+      },
+      {
        "src": "img1/campeones-sin-limites/c_frame.webp",
        "w": 2400,
        "h": 1015,
