@@ -44,8 +44,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Día del Niño: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Día del Niño hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img1/dia-del-nino/ddn_f1346.webp",
@@ -467,8 +467,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Campeones Sin Límites: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Campeones Sin Límites hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img1/campeones-sin-limites/c_frame.webp",
@@ -827,8 +827,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Toys\"R\"Us llega a Ripley: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Toys\"R\"Us llega a Ripley hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img1/toys-r-us/t_std.webp",
@@ -1208,8 +1208,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de New Romantic y moda: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de New Romantic y moda hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img2/new-romantic/s_nr_01.webp",
@@ -1439,8 +1439,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Ventas Privadas y Days: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Ventas Privadas y Days hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img2/ventas-privadas/s_vp_08.webp",
@@ -1686,8 +1686,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Me fascinan las sandalias: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Me fascinan las sandalias hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img2/me-fascinan-las-sandalias/s_sand_01v.webp",
@@ -1769,8 +1769,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Ripley Beauty: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Ripley Beauty hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img2/ripley-beauty/r_stdc.webp",
@@ -2005,8 +2005,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Gamer Week: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Gamer Week hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img2/gamer-week/s_gw_01.webp",
@@ -2092,8 +2092,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Fiestas Patrias y gift cards: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Fiestas Patrias y gift cards hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img2/fiestas-patrias/sep1.webp",
@@ -2267,8 +2267,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Activaciones en tienda: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Activaciones en tienda hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img3/activaciones/sh_counter.webp",
@@ -2560,8 +2560,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Muralia: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Muralia hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img3/muralia/logo_arcilla.webp",
@@ -3008,8 +3008,8 @@ window.PORTAFOLIO = {
        "w": 2400,
        "h": 1644,
        "nombre": "Portada del proyecto",
-       "formato": "Composición con piezas y originales del proyecto",
-       "alt": "Portada de Neorigen: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+       "formato": "Portada en la gráfica de la campaña",
+       "alt": "Portada de Neorigen hecha con la tipografía, los colores y los elementos gráficos de la campaña."
       },
       {
        "src": "img3/neorigen/sitio_web.webp",
