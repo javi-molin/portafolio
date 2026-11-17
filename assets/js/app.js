@@ -32,9 +32,9 @@
     }).join('');
     return '<div class="carpeta">' +
       '<div class="carpeta__cabeza"><div>' +
-      '<p class="sobre">Carpeta · Diseñadora de Marketing, 2025</p>' +
+      '<p class="sobre">Carpeta · Diseñadora de Marketing</p>' +
       '<h2 class="titulo titulo--xl">Ripley</h2></div>' +
-      '<dl class="ficha"><dt>Cargo</dt><dd>Diseñadora de Marketing</dd><dt>Año</dt><dd>2025</dd><dt>Mercados</dt><dd>Chile y Perú</dd><dt>Proyectos</dt><dd>' + ripley.length + '</dd></dl>' +
+      '<dl class="ficha"><dt>Cargo</dt><dd>Diseñadora de Marketing</dd><dt>Mercados</dt><dd>Chile y Perú</dd><dt>Proyectos</dt><dd>' + ripley.length + '</dd></dl>' +
       '</div><div class="carpeta__grilla">' + items + '</div></div>';
   }
 
