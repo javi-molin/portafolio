@@ -6,7 +6,6 @@
   var DATA = window.PORTAFOLIO || { proyectos: [], perfil: {} };
   var proyectos = DATA.proyectos;
   var ripley = proyectos.filter(function (p) { return p.grupo === 'ripley'; });
-  var freelance = proyectos.filter(function (p) { return p.grupo !== 'ripley'; });
 
   var ventana = document.getElementById('ventana');
   var cuerpo = document.getElementById('cuerpo');
@@ -19,7 +18,6 @@
     });
   }
   function porSlug(slug) { return proyectos.filter(function (p) { return p.slug === slug; })[0]; }
-  function serieDe(p) { return p.grupo === 'ripley' ? ripley : freelance; }
 
   /* ---------- Vistas ---------- */
 
@@ -54,29 +52,29 @@
       (p.formatos && p.formatos.length ? '<dt>Formatos</dt><dd>' + esc(p.formatos.join(' · ')) + '</dd>' : '') +
       (p.creditos && p.creditos.length ? '<dt>Créditos</dt><dd>' + p.creditos.map(esc).join('<br>') + '</dd>' : '');
 
+    /* Pestañas compactas: número y título corto; el título completo queda en el tooltip. */
     var tabs = secs.map(function (s, n) {
-      return '<button class="tab" type="button" role="tab" aria-selected="' + (s === sec) + '" data-sec="' + n + '">' +
-        (n + 1 < 10 ? '0' : '') + (n + 1) + ' · ' + esc(s.titulo) + '</button>';
+      return '<button class="tab" type="button" role="tab" title="' + esc(s.titulo) + '" aria-selected="' + (s === sec) + '" data-sec="' + n + '">' +
+        '<span class="tab__n">' + (n + 1 < 10 ? '0' : '') + (n + 1) + '</span>' + esc(s.titulo) + '</button>';
     }).join('');
 
-    var lamina = '';
+    var visor = '';
     if (pz) {
       var alta = pz.h / pz.w > 1.9;
       var medio = pz.video
-        ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
+        ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" preload="metadata" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
         : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '" width="' + pz.w + '" height="' + pz.h + '">';
       var hayVarias = piezas.length > 1 || secs.length > 1;
-      lamina = '<figure class="lamina">' +
+      visor = '<figure class="lamina">' +
         '<div class="lamina__marco' + (alta ? ' es-alta' : '') + '">' + medio +
         (hayVarias ? '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior">←</button>' +
           '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente">→</button>' : '') +
         '</div>' +
-        '<figcaption><div class="lamina__pie"><span><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') + '</span>' +
-        '<span class="mono suave">' + (i + 1) + ' / ' + piezas.length + '</span></div>' +
-        (pz.nota ? '<p class="lamina__nota">' + esc(pz.nota) + '</p>' : '') +
-        '</figcaption></figure>';
+        '<figcaption class="lamina__pie"><span><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') +
+        (pz.nota ? '<span class="lamina__nota"> — ' + esc(pz.nota) + '</span>' : '') + '</span>' +
+        '<span class="mono suave">' + (i + 1) + ' / ' + piezas.length + '</span></figcaption></figure>';
       if (piezas.length > 1) {
-        lamina += '<div class="minis">' + piezas.map(function (q, n) {
+        visor += '<div class="minis">' + piezas.map(function (q, n) {
           return '<button class="mini" type="button" data-pieza="' + n + '" aria-current="' + (n === i) + '" aria-label="' + esc(q.nombre) + '">' +
             '<img src="' + esc(q.src) + '" alt="" loading="lazy"></button>';
         }).join('') + '</div>';
@@ -86,31 +84,33 @@
     var colores = sec.colores ? '<ul class="colores">' + sec.colores.map(function (c) {
       return '<li class="color" style="background:' + esc(c.hex) + ';color:' + esc(c.ink) + '">' + esc(c.name) + '<br>' + esc(c.hex) + '</li>';
     }).join('') + '</ul>' : '';
-    var texto = sec.texto ? '<div class="seccion__texto">' + sec.texto.map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') + '</div>' : '';
-    var lista = sec.lista ? (sec.listaTitulo ? '<p class="sobre" style="margin-top:20px">' + esc(sec.listaTitulo) + '</p>' : '') +
+    var texto = sec.texto ? sec.texto.map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') : '';
+    var lista = sec.lista ? (sec.listaTitulo ? '<p class="sobre">' + esc(sec.listaTitulo) + '</p>' : '') +
       '<ul class="seccion__lista">' + sec.lista.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>' : '';
+    var seccion = (texto || lista || colores)
+      ? '<section class="seccion"><p class="sobre">' + esc(sec.titulo) + '</p>' + texto + lista + colores + '</section>' : '';
 
-    var serie = serieDe(p);
-    var pos = serie.indexOf(p);
-    var ant = serie[(pos - 1 + serie.length) % serie.length];
-    var sig = serie[(pos + 1) % serie.length];
+    /* Anterior y siguiente recorren los 12 proyectos en orden, así nunca apuntan al mismo. */
+    var pos = proyectos.indexOf(p);
+    var ant = proyectos[(pos - 1 + proyectos.length) % proyectos.length];
+    var sig = proyectos[(pos + 1) % proyectos.length];
 
     return '<article class="proyecto">' +
       '<div class="proyecto__datos">' +
       '<p class="sobre">' + (p.n ? esc(p.n) + ' · ' : '') + esc(p.tipo) + '</p>' +
-      '<h2 class="titulo titulo--l">' + esc(p.titulo) + '</h2>' +
-      '<p>' + esc(p.resumen) + '</p>' +
-      '<dl class="ficha">' + ficha + '</dl>' +
+      '<h2 class="titulo titulo--m">' + esc(p.titulo) + '</h2>' +
+      '<p class="proyecto__resumen">' + esc(p.resumen) + '</p>' +
+      seccion +
+      '<details class="proyecto__ficha"' + (seccion ? '' : ' open') + '><summary>Ficha del proyecto</summary><dl class="ficha">' + ficha + '</dl></details>' +
+      '<nav class="proyecto__pie" aria-label="Otros proyectos">' +
+      '<a class="enlace" href="#p/' + ant.slug + '"><span>← Anterior</span>' + esc(ant.titulo) + '</a>' +
+      '<a class="enlace enlace--sig" href="#p/' + sig.slug + '"><span>Siguiente →</span>' + esc(sig.titulo) + '</a>' +
+      '</nav>' +
       '</div>' +
       '<div class="proyecto__visor">' +
       '<div class="tabs" role="tablist" aria-label="Secciones del proyecto">' + tabs + '</div>' +
-      lamina + colores + texto + lista +
-      '</div></article>' +
-      '<nav class="proyecto__pie" aria-label="Otros proyectos">' +
-      '<a class="enlace" href="#p/' + ant.slug + '">← ' + esc(ant.titulo) + '</a>' +
-      (p.grupo === 'ripley' ? '<a class="enlace" href="#ripley">Volver a la carpeta Ripley</a>' : '') +
-      '<a class="enlace" href="#p/' + sig.slug + '">' + esc(sig.titulo) + ' →</a>' +
-      '</nav>';
+      visor +
+      '</div></article>';
   }
 
   function vistaSobre() {
@@ -196,10 +196,29 @@
       return;
     }
     var p = estado.vista === 'proyecto' ? porSlug(estado.slug) : null;
+    /* Al cambiar de pieza o pestaña se conserva dónde estaba cada zona con scroll y si la ficha estaba abierta. */
+    var zonas = ['.proyecto__datos', '.tabs', '.minis'];
+    var antes = conservarScroll ? zonas.map(function (s) {
+      var e = cuerpo.querySelector(s); return e ? [e.scrollTop, e.scrollLeft] : null;
+    }) : [];
+    var ficha = cuerpo.querySelector('.proyecto__ficha');
+    if (conservarScroll && ficha) estado.ficha = ficha.open;
     cuerpo.innerHTML = estado.vista === 'ripley' ? vistaCarpeta()
       : estado.vista === 'proyecto' ? vistaProyecto(p)
       : estado.vista === 'sobre' ? vistaSobre()
       : vistaContacto();
+    cuerpo.classList.toggle('es-proyecto', estado.vista === 'proyecto');
+    ficha = cuerpo.querySelector('.proyecto__ficha');
+    if (ficha && conservarScroll && estado.ficha != null) ficha.open = estado.ficha;
+    antes.forEach(function (v, n) {
+      var e = cuerpo.querySelector(zonas[n]); if (e && v) { e.scrollTop = v[0]; e.scrollLeft = v[1]; }
+    });
+    if (!conservarScroll) {
+      var activa = cuerpo.querySelector('.tab[aria-selected="true"]');
+      if (activa && activa.scrollIntoView) activa.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    }
+    var miniActual = cuerpo.querySelector('.mini[aria-current="true"]');
+    if (miniActual && miniActual.scrollIntoView) miniActual.scrollIntoView({ block: 'nearest', inline: 'nearest' });
     pintarRuta(p);
     marcarIcono();
     var estabaCerrada = ventana.hidden;
