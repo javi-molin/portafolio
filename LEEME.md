@@ -33,6 +33,8 @@ Para verlo en tu computador, abre `index.html` con doble clic.
 - **Texto de la nota:** está en `index.html`, dentro de `<aside class="nota">`.
 - **Carrusel de destacadas:** en `assets/js/app.js`, la lista `DESTACADAS`. Cada entrada dice proyecto, sección y pieza (contadas desde 1) y una etiqueta. Arriba de la lista están las cuatro condiciones para que una pieza entre.
 - **Enlace directo a una pieza:** `#p/proyecto/sección/pieza`, por ejemplo `#p/dia-del-nino/7/1`.
+- **Página web dentro del visor:** en `data.js`, agrega `"web": "ruta/a/la/pagina.html"` a una pieza; se muestra incrustada y `src` queda como miniatura.
+- **Portadas de proyecto:** `img3/portadas/`, una por proyecto, al tamaño del visor (2400 × 1644). Son la primera pieza de cada caso.
 - **Enlace a un sitio en vivo:** en `data.js`, agrega `"enlace": {"url": "…", "texto": "…"}` a la sección.
 - **Textos de un proyecto:** en `data.js`, busca el proyecto por su `slug`.
 - **Currículum:** reemplaza `cv/CV-Javi-Molin.pdf` por el nuevo con el mismo nombre.

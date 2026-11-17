@@ -408,3 +408,31 @@ ul, ol { padding: 0; list-style: none; }
   .ampliado .lamina__flecha { top: auto; bottom: 64px; }
   .indice .seccion { padding-left: 8px; }
 }
+
+/* ---------- Ajustes nov 2026 (2): web incrustada y flechas finas ---------- */
+
+/* Una pieza puede ser una página web: se ve dentro del visor y se puede usar ahí mismo. */
+.lamina__marco > .lamina__web { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+.ampliado__web { width: 100%; height: 100%; border: var(--borde); background: #fff; }
+.lamina__marco:has(.lamina__web) .lamina__flecha { top: auto; bottom: 10px; margin-top: 0; }
+.lamina__marco:has(.lamina__web) .lamina__flecha--ant { left: auto; right: 160px; }
+.lamina__marco:has(.lamina__web) .lamina__flecha--sig { right: 122px; }
+
+/* Flechas del visor: más chicas, livianas y semitransparentes hasta pasar el mouse. */
+.lamina__flecha, .ampliado .lamina__flecha {
+  width: 32px; height: 32px; margin-top: -16px; border: 1px solid rgba(18, 18, 18, 0.35);
+  background: rgba(255, 255, 255, 0.82); color: var(--tinta); opacity: 0.75;
+  transition: opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+.lamina__marco:hover .lamina__flecha, .lamina__flecha:focus-visible, .ampliado .lamina__flecha:hover { opacity: 1; }
+.lamina__flecha:hover { background: var(--acento); border-color: var(--tinta); opacity: 1; }
+.lamina__marco.es-alta .lamina__flecha { top: calc(50% - 16px); }
+.lamina__ampliar { min-height: 32px; padding: 0 10px; border: 1px solid rgba(18, 18, 18, 0.35); background: rgba(255, 255, 255, 0.86); font-size: 12px; }
+
+/* Anterior / siguiente proyecto: dos enlaces de texto, sin cajas. */
+.proyecto__pie { gap: 12px; padding: 10px 0 2px; }
+.proyecto__pie .enlace { min-height: 40px; padding: 2px 0; border: 0; background: none; font-size: 12.5px; font-weight: 500; text-decoration: none; }
+.proyecto__pie .enlace span { font-size: 11px; display: inline-flex; align-items: center; gap: 4px; }
+.proyecto__pie .enlace:not(.enlace--sig) span::before { content: '‹'; font-size: 14px; line-height: 1; }
+.proyecto__pie .enlace--sig span::after { content: '›'; font-size: 14px; line-height: 1; }
+.proyecto__pie .enlace:hover { background: none; text-decoration: underline; text-underline-offset: 3px; }

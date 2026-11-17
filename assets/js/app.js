@@ -80,14 +80,16 @@
     var visor = '';
     if (pz) {
       var alta = pz.h / pz.w > 1.9;
-      var medio = pz.video
+      var medio = pz.web
+        ? '<iframe class="lamina__web" src="' + esc(pz.web) + '" title="' + esc(pz.nombre) + '" loading="lazy"></iframe>'
+        : pz.video
         ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" preload="metadata" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
         : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '" width="' + pz.w + '" height="' + pz.h + '" data-ampliar>';
       var hayVarias = piezas.length > 1 || secs.length > 1;
       visor = '<figure class="lamina">' +
         '<div class="lamina__marco' + (alta ? ' es-alta' : '') + '">' + medio +
-        (hayVarias ? '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior">←</button>' +
-          '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente">→</button>' : '') +
+        (hayVarias ? '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="M9 2 4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>' +
+          '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="m5 2 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>' : '') +
         '<button class="lamina__ampliar" type="button" data-ampliar aria-label="Ver a pantalla completa"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" shape-rendering="crispEdges"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" stroke="currentColor" stroke-width="2" fill="none"/></svg><span>Ampliar</span></button>' +
         '</div>' +
         '<figcaption class="lamina__pie"><span><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') +
@@ -106,11 +108,11 @@
     var ant = proyectos[pos - 1];
     var sig = proyectos[pos + 1];
     var enlaceAnt = ant
-      ? '<a class="enlace" href="#p/' + ant.slug + '"><span>← Anterior</span>' + esc(ant.titulo) + '</a>'
-      : '<a class="enlace" href="#ripley"><span>← Volver</span>Carpeta Ripley</a>';
+      ? '<a class="enlace" href="#p/' + ant.slug + '"><span>Anterior</span>' + esc(ant.titulo) + '</a>'
+      : '<a class="enlace" href="#ripley"><span>Volver</span>Carpeta Ripley</a>';
     var enlaceSig = sig
-      ? '<a class="enlace enlace--sig" href="#p/' + sig.slug + '"><span>Siguiente →</span>' + esc(sig.titulo) + '</a>'
-      : '<a class="enlace enlace--sig" href="#"><span>Volver →</span>Escritorio</a>';
+      ? '<a class="enlace enlace--sig" href="#p/' + sig.slug + '"><span>Siguiente</span>' + esc(sig.titulo) + '</a>'
+      : '<a class="enlace enlace--sig" href="#"><span>Volver</span>Escritorio</a>';
 
     return '<article class="proyecto">' +
       '<div class="proyecto__datos">' +
@@ -316,13 +318,14 @@
     var medio = pz.video
       ? '<video src="' + esc(pz.video) + '" poster="' + esc(pz.src) + '" controls muted loop playsinline autoplay aria-label="' + esc(pz.alt) + '"></video>'
       : '<img src="' + esc(pz.src) + '" alt="' + esc(pz.alt) + '">';
+    if (pz.web) medio = '<iframe class="ampliado__web" src="' + esc(pz.web) + '" title="' + esc(pz.nombre) + '"></iframe>';
     var estabaOculto = ampliado.hidden;
     ampliado.innerHTML =
       '<div class="ampliado__barra"><span><b>' + esc(p.titulo) + '</b> / ' + esc(sec.titulo) + '</span>' +
       '<button class="ampliado__cerrar" type="button" data-cerrar aria-label="Cerrar pantalla completa">Cerrar ✕</button></div>' +
       '<div class="ampliado__pieza">' + medio + '</div>' +
-      '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior">←</button>' +
-      '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente">→</button>' +
+      '<button class="lamina__flecha lamina__flecha--ant" type="button" data-mover="-1" aria-label="Pieza anterior"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="M9 2 4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>' +
+      '<button class="lamina__flecha lamina__flecha--sig" type="button" data-mover="1" aria-label="Pieza siguiente"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="m5 2 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>' +
       '<p class="ampliado__pie"><b>' + esc(pz.nombre) + '</b>' + (pz.formato ? ' · ' + esc(pz.formato) : '') + '</p>';
     ampliado.hidden = false;
     if (estabaOculto) { var c = ampliado.querySelector('[data-cerrar]'); if (c) c.focus({ preventScroll: true }); }
@@ -359,14 +362,14 @@
      4. entre todas cubren disciplinas distintas: evento, sistema gráfico, identidad,
         campaña y animación, sin repetir más de dos veces un mismo proyecto. */
   var DESTACADAS = [
-    { p: 'dia-del-nino', s: 1, z: 1, tipo: 'Evento producido' },
-    { p: 'muralia', s: 3, z: 3, tipo: 'Identidad y biblioteca' },
+    { p: 'dia-del-nino', s: 1, z: 2, tipo: 'Evento producido' },
+    { p: 'muralia', s: 3, z: 9, tipo: 'Identidad y biblioteca' },
     { p: 'ventas-privadas', s: 5, z: 6, tipo: 'Animación' },
     { p: 'dia-del-nino', s: 2, z: 1, tipo: 'Sistema gráfico' },
     { p: 'ventas-privadas', s: 2, z: 1, tipo: 'Sistema de piezas' },
     { p: 'activaciones', s: 4, z: 5, tipo: 'Animación' },
     { p: 'campeones-sin-limites', s: 5, z: 1, tipo: 'Campaña en Metro' },
-    { p: 'muralia', s: 3, z: 1, tipo: 'Construcción de iconos' }
+    { p: 'muralia', s: 3, z: 8, tipo: 'Construcción de iconos' }
   ].map(function (d) {
     var p = porSlug(d.p), sec = p && p.secciones[d.s - 1], pz = sec && sec.piezas && sec.piezas[d.z - 1];
     return pz ? { p: p, pz: pz, tipo: d.tipo, href: '#p/' + d.p + '/' + d.s + '/' + d.z } : null;

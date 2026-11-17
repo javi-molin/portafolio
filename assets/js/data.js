@@ -40,6 +40,14 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
+       "src": "img3/portadas/dia-del-nino.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Día del Niño: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
+      {
        "src": "img1/dia-del-nino/ddn_f1346.webp",
        "w": 1800,
        "h": 2400,
@@ -455,6 +463,14 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
+       "src": "img3/portadas/campeones-sin-limites.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Campeones Sin Límites: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
+      {
        "src": "img1/campeones-sin-limites/c_frame.webp",
        "w": 2400,
        "h": 1015,
@@ -806,6 +822,14 @@ window.PORTAFOLIO = {
       "Stories animadas con Geoffrey en la ciudad para invitar a conocerlo en cada tienda."
      ],
      "piezas": [
+      {
+       "src": "img3/portadas/toys-r-us.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Toys\"R\"Us llega a Ripley: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
       {
        "src": "img1/toys-r-us/t_std.webp",
        "w": 2400,
@@ -1180,6 +1204,14 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
+       "src": "img3/portadas/new-romantic.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de New Romantic y moda: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
+      {
        "src": "img2/new-romantic/s_nr_01.webp",
        "w": 1029,
        "h": 1245,
@@ -1402,6 +1434,14 @@ window.PORTAFOLIO = {
       "El mailing se entregó en HTML, listo para que el equipo de envíos lo copiara y pegara sin que se pixelara."
      ],
      "piezas": [
+      {
+       "src": "img3/portadas/ventas-privadas.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Ventas Privadas y Days: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
       {
        "src": "img2/ventas-privadas/s_vp_08.webp",
        "w": 1200,
@@ -1642,6 +1682,14 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
+       "src": "img3/portadas/me-fascinan-las-sandalias.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Me fascinan las sandalias: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
+      {
        "src": "img2/me-fascinan-las-sandalias/s_sand_01v.webp",
        "w": 832,
        "h": 464,
@@ -1716,6 +1764,14 @@ window.PORTAFOLIO = {
       "Para los ganadores de concursos, una familia de gift cards: la modelo de la campaña, el monto grande y el legal en una línea."
      ],
      "piezas": [
+      {
+       "src": "img3/portadas/ripley-beauty.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Ripley Beauty: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
       {
        "src": "img2/ripley-beauty/r_stdc.webp",
        "w": 1579,
@@ -1945,6 +2001,14 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
+       "src": "img3/portadas/gamer-week.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Gamer Week: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
+      {
        "src": "img2/gamer-week/s_gw_01.webp",
        "w": 1600,
        "h": 900,
@@ -2023,6 +2087,14 @@ window.PORTAFOLIO = {
       "Dibujé los íconos del 18 (chupalla, banderines, empanada, guitarra, mote con huesillo) y los usé como sistema: en la gift card, en la trama y en redes."
      ],
      "piezas": [
+      {
+       "src": "img3/portadas/fiestas-patrias.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Fiestas Patrias y gift cards: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
       {
        "src": "img2/fiestas-patrias/sep1.webp",
        "w": 1024,
@@ -2190,6 +2262,14 @@ window.PORTAFOLIO = {
       "Con Puma y ReparaLab, en Ripley Costanera Center."
      ],
      "piezas": [
+      {
+       "src": "img3/portadas/activaciones.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Activaciones en tienda: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
       {
        "src": "img3/activaciones/sh_counter.webp",
        "w": 595,
@@ -2476,6 +2556,14 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
+       "src": "img3/portadas/muralia.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Muralia: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
+      {
        "src": "img3/muralia/logo_arcilla.webp",
        "w": 1200,
        "h": 1200,
@@ -2539,72 +2627,85 @@ window.PORTAFOLIO = {
      "titulo": "Biblioteca gráfica: 124 vectores",
      "texto": [
       "Iconos, franjas, marcos y símbolos de plano dibujados con las mismas reglas del logo: línea de grosor constante, esquinas rectas y vocabulario de obra.",
-      "La entregué como una página interactiva: se cambia el color con la paleta de Muralia, se busca por nombre y se copia cada vector en SVG o PNG."
+      "La entregué como una página interactiva. Aquí funciona igual: cambia el color con la paleta de Muralia, busca por nombre y copia cada vector en SVG o PNG. Después vienen las láminas de cada categoría."
      ],
      "enlace": {
       "url": "muralia/biblioteca.html",
-      "texto": "Abrir la biblioteca interactiva"
+      "texto": "Abrir en una pestaña nueva"
      },
      "piezas": [
       {
-       "src": "img3/muralia/lib-construccion.webp",
-       "w": 2400,
-       "h": 998,
-       "nombre": "Construcción del icono",
-       "formato": "Grilla 48 × 48 · trazo 3",
-       "alt": "Tres iconos de Muralia (fuego, placa de yeso cartón y casa) dibujados sobre su grilla de 48 × 48 con el área segura marcada.",
-       "nota": "Todos los iconos salen de la misma grilla: 48 × 48, trazo de 3, esquinas rectas y remates cuadrados."
+       "src": "img3/muralia/biblioteca-web.webp",
+       "w": 2012,
+       "h": 1376,
+       "nombre": "Biblioteca interactiva",
+       "formato": "Página web · 124 vectores y 52 fondos",
+       "alt": "Biblioteca gráfica de Muralia: buscador, selector de color y la grilla de iconos.",
+       "web": "muralia/biblioteca.html"
       },
       {
-       "src": "img3/muralia/lib-iconos.webp",
-       "w": 2000,
-       "h": 1211,
+       "src": "img3/muralia/cat-iconos.webp",
+       "w": 2400,
+       "h": 1644,
        "nombre": "Iconos",
-       "formato": "54 vectores SVG",
-       "alt": "Los 54 iconos de Muralia en una grilla: productos, propiedades, sectores y contacto.",
-       "nota": "Los productos, las propiedades técnicas, los sectores donde Muralia trabaja y los datos de contacto, dibujados con la misma regla: grilla de 48 × 48, trazo de 3, esquinas rectas y remates cuadrados."
+       "formato": "54 vectores · 48 × 48",
+       "alt": "Los 54 iconos de Muralia: productos, propiedades, sectores y contacto, cada uno con su nombre."
       },
       {
-       "src": "img3/muralia/lib-sistema-color.webp",
+       "src": "img3/muralia/cat-franjas.webp",
        "w": 2400,
-       "h": 1476,
-       "nombre": "Un vector, cinco combinaciones",
-       "formato": "Paleta de obra",
-       "alt": "Seis iconos de Muralia repetidos en cinco combinaciones de color: grafito, arcilla, papel sobre grafito, papel sobre arcilla y yeso sobre musgo.",
-       "nota": "Cada vector es de un solo color, así que funciona en cualquiera de las combinaciones de la paleta sin redibujarlo."
-      },
-      {
-       "src": "img3/muralia/lib-franjas-23.webp",
-       "w": 2400,
-       "h": 2282,
+       "h": 1644,
        "nombre": "Franjas",
        "formato": "23 vectores · 480 × 48",
-       "alt": "Las 23 franjas de Muralia: aparejo, lana, montantes, achurados, cota, zigzag, perforado, chevrones y otras.",
-       "nota": "Bandas para cabeceras, pies de página, separadores de sección y bordes de piezas."
+       "alt": "Las 23 franjas de Muralia con su número y nombre: aparejo, lana, montantes, achurados, cota, zigzag y otras."
       },
       {
-       "src": "img3/muralia/lib-marcos.webp",
+       "src": "img3/muralia/cat-marcos.webp",
        "w": 2400,
-       "h": 932,
+       "h": 1644,
        "nombre": "Marcos y contenedores",
        "formato": "14 vectores · 240 × 160",
-       "alt": "Los 14 marcos y contenedores de Muralia: esquineras, marco doble, cartela de plano, etiqueta, sellos y ventana para foto."
+       "alt": "Los 14 marcos y contenedores de Muralia: esquineras, marco doble, ficha, cartela de plano, etiqueta, sellos y ventana para foto."
       },
       {
-       "src": "img3/muralia/lib-plano.webp",
+       "src": "img3/muralia/cat-plano.webp",
        "w": 2400,
-       "h": 852,
-       "nombre": "Señalética de plano y marcadores",
-       "formato": "16 vectores · 64 × 64",
-       "alt": "Símbolos del dibujo técnico de arquitectura de Muralia: eje, nivel de piso, corte, norte, cotas, muro cortafuego y marcadores numerados."
+       "h": 1644,
+       "nombre": "Señalética de plano",
+       "formato": "14 vectores · 64 × 64",
+       "alt": "Los 14 símbolos de dibujo técnico de Muralia: eje, nivel de piso, corte, detalle, norte, replanteo, pendiente, escala, cotas, referencia, revisión, muro cortafuego y línea de rotura."
       },
       {
-       "src": "img3/muralia/lib-vinetas.webp",
+       "src": "img3/muralia/cat-vinetas.webp",
        "w": 2400,
-       "h": 1194,
+       "h": 1644,
        "nombre": "Viñetas, flechas y separadores",
        "formato": "17 vectores",
-       "alt": "Viñetas cuadradas, flechas, chevrón, signos y cinco separadores horizontales de Muralia."
+       "alt": "Viñetas, flechas, chevrón, signos y cinco separadores de Muralia."
+      },
+      {
+       "src": "img3/muralia/cat-marcadores.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Marcadores",
+       "formato": "2 vectores en 5 combinaciones",
+       "alt": "Los marcadores numerados de Muralia, en contorno y sólido, en las cinco combinaciones de color de la marca."
+      },
+      {
+       "src": "img3/muralia/cat-construccion.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Construcción del icono",
+       "formato": "Grilla 48 × 48 · trazo 3",
+       "alt": "Tres iconos de Muralia sobre su grilla de 48 × 48 con el área segura marcada."
+      },
+      {
+       "src": "img3/muralia/cat-color.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Un vector, cinco combinaciones",
+       "formato": "Paleta de obra",
+       "alt": "Seis iconos de Muralia repetidos en las cinco combinaciones de color de la marca."
       }
      ]
     },
@@ -2615,29 +2716,20 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
-       "src": "img3/muralia/lib-fondos.webp",
-       "w": 2000,
-       "h": 1144,
-       "nombre": "Fondos de pantalla",
-       "formato": "52 fondos · 1080 × 1920",
-       "alt": "Hoja de contactos con los 52 fondos de pantalla de Muralia.",
-       "nota": "Cincuenta y dos fondos sin logo, cada uno en vertical 1080 × 1920 y horizontal 1920 × 1080: aparejos, achurados, cortes de muro, ejes de plano, ondas acústicas y curvas de temperatura."
-      },
-      {
-       "src": "img3/muralia/lib-fondos-v.webp",
+       "src": "img3/muralia/cat-fondos-v.webp",
        "w": 2400,
-       "h": 900,
+       "h": 1644,
        "nombre": "Fondos verticales",
-       "formato": "Selección de 6 · 1080 × 1920",
-       "alt": "Seis fondos verticales de Muralia: aparejo gigante, lana monumental, marcos concéntricos, conductividad térmica, llama gigante y escalera."
+       "formato": "52 fondos · 1080 × 1920",
+       "alt": "Los 52 fondos de pantalla verticales de Muralia en una grilla."
       },
       {
-       "src": "img3/muralia/lib-fondos-h.webp",
+       "src": "img3/muralia/cat-fondos-h.webp",
        "w": 2400,
-       "h": 1606,
+       "h": 1644,
        "nombre": "Fondos horizontales",
-       "formato": "Selección de 4 · 1920 × 1080",
-       "alt": "Cuatro fondos horizontales de Muralia: plano en grilla, F-120, horizonte de sectores y recorrido de ductos."
+       "formato": "52 fondos · 1920 × 1080",
+       "alt": "Los 52 fondos de pantalla horizontales de Muralia en una grilla."
       },
       {
        "src": "img3/muralia/patron_aparejo.webp",
@@ -2911,6 +3003,14 @@ window.PORTAFOLIO = {
       "Cada modelo lleva el nombre de un árbol nativo (Lingue, Huingán, Maitén), y ese nombre ordena el sitio y las redes."
      ],
      "piezas": [
+      {
+       "src": "img3/portadas/neorigen.webp",
+       "w": 2400,
+       "h": 1644,
+       "nombre": "Portada del proyecto",
+       "formato": "Composición con piezas y originales del proyecto",
+       "alt": "Portada de Neorigen: composición con piezas del proyecto y una ficha con el nombre, el tipo de trabajo y el año."
+      },
       {
        "src": "img3/neorigen/sitio_web.webp",
        "w": 1440,
