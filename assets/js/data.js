@@ -54,6 +54,14 @@ window.PORTAFOLIO = {
        "nombre": "Arco de entrada y pasillo de franjas",
        "formato": "Ripley Costanera Center, 3 de agosto de 2025",
        "alt": "Arco de entrada del Día del Niño con franjas rosadas, naranjas y amarillas, seguido por un pasillo de piso a rayas dentro de la tienda."
+      },
+      {
+       "src": "img1/dia-del-nino/ddn_recorrido.webp",
+       "w": 2400,
+       "h": 1800,
+       "nombre": "El recorrido completo",
+       "formato": "Ripley Costanera Center, 3 de agosto de 2025",
+       "alt": "Vista del evento armado: la pieza central con el oso y las ondas en primer plano, y al fondo el arco de entrada con el pasillo de franjas."
       }
      ],
      "listaTitulo": "Decisiones"
@@ -150,12 +158,12 @@ window.PORTAFOLIO = {
        "alt": "Frente del arco. Original de impresión"
       },
       {
-       "src": "img1/dia-del-nino/ddn_3d4.webp",
-       "w": 761,
-       "h": 745,
+       "src": "img1/dia-del-nino/ddn_arco3d.webp",
+       "w": 1116,
+       "h": 906,
        "nombre": "Arco en volumen",
        "formato": "Revisión con la productora",
-       "alt": "Arco en volumen. Revisión con la productora"
+       "alt": "Render del arco de entrada en volumen, con el frente gris, las franjas de colores en el canto y los logos de Banco Ripley, Ripley y Ripley Puntos."
       }
      ]
     },
@@ -293,14 +301,6 @@ window.PORTAFOLIO = {
        "nombre": "Mesas y rincón creativo",
        "formato": "En uso",
        "alt": "La zona de mesas y el rincón creativo llenos de familias, con las columnas de franjas y los arcos de la paleta."
-      },
-      {
-       "src": "img1/dia-del-nino/ddn_ev_zona2.webp",
-       "w": 1600,
-       "h": 900,
-       "nombre": "Pintacaritas",
-       "formato": "En uso",
-       "alt": "La fila del pintacaritas junto al módulo rosado con el letrero del servicio."
       }
      ]
     },
@@ -442,7 +442,8 @@ window.PORTAFOLIO = {
    "creditos": [
     "Fotomontajes 3D: productora del evento (MacroMKT).",
     "Fotos de deportistas: material de campaña.",
-    "El logo Campeones Sin Límites viene de ediciones anteriores."
+    "El logo Campeones Sin Límites viene de ediciones anteriores.",
+    "Fotos y videos del evento y de Metro: registro del equipo de Marketing de Ripley y de la productora."
    ],
    "cover": {
     "src": "img3/portadas/campeones-sin-limites.webp",
@@ -532,7 +533,7 @@ window.PORTAFOLIO = {
     {
      "titulo": "Implementación del estadio",
      "texto": [
-      "Gráfica aplicada sobre los fotomontajes 3D de la productora."
+      "Gráfica aplicada sobre los fotomontajes 3D de la productora, para revisar escala y ubicación antes de producir."
      ],
      "piezas": [
       {
@@ -544,12 +545,12 @@ window.PORTAFOLIO = {
        "alt": "Carpa. Fotomontaje"
       },
       {
-       "src": "img1/campeones-sin-limites/csl_arco.webp",
-       "w": 1418,
-       "h": 1048,
-       "nombre": "Arco de entrada",
-       "formato": "Fotomontaje",
-       "alt": "Arco de entrada. Fotomontaje"
+       "src": "img1/campeones-sin-limites/csl_arco_foto.webp",
+       "w": 1554,
+       "h": 1200,
+       "nombre": "Arco inflable de entrada",
+       "formato": "Fotomontaje en el acceso del estadio",
+       "alt": "Arco inflable fucsia con Ripley, Campeones Sin Límites, Teletón y Canal 13, montado en fotomontaje sobre el acceso del estadio."
       },
       {
        "src": "img1/campeones-sin-limites/csl_pera.webp",
@@ -568,12 +569,12 @@ window.PORTAFOLIO = {
        "alt": "Banderas vela. Fotomontaje"
       },
       {
-       "src": "img1/campeones-sin-limites/csl_carpa2.webp",
-       "w": 1600,
-       "h": 1043,
+       "src": "img1/campeones-sin-limites/csl_carpa.webp",
+       "w": 2400,
+       "h": 1759,
        "nombre": "Carpa araña",
-       "formato": "Fotomontaje",
-       "alt": "Carpa araña. Fotomontaje"
+       "formato": "Render de la gráfica",
+       "alt": "Carpa araña fucsia con los logos de Ripley, Campeones Sin Límites, Teletón y Canal 13."
       }
      ]
     },
@@ -592,12 +593,68 @@ window.PORTAFOLIO = {
        "alt": "Poleras de las cinco delegaciones. Frente y espalda"
       },
       {
-       "src": "img1/campeones-sin-limites/c_vol.webp",
-       "w": 1004,
-       "h": 1189,
+       "src": "img1/campeones-sin-limites/c_vol_frente.webp",
+       "w": 2400,
+       "h": 2369,
        "nombre": "Polera de voluntarios",
-       "formato": "Misma base",
-       "alt": "Polera de voluntarios. Misma base"
+       "formato": "Prenda producida, frente",
+       "alt": "Polera de voluntarios ya producida, con degradé naranja, rosado y azul, y los logos de Campeones Sin Límites, Ripley, Teletón y Canal 13 al frente."
+      },
+      {
+       "src": "img1/campeones-sin-limites/c_vol_espalda.webp",
+       "w": 2400,
+       "h": 2369,
+       "nombre": "Polera de voluntarios",
+       "formato": "Prenda producida, espalda",
+       "alt": "Espalda de la polera de voluntarios con la palabra Voluntario, Ripley y el símbolo de Campeones Sin Límites."
+      }
+     ]
+    },
+    {
+     "titulo": "El evento en marcha",
+     "texto": [
+      "Las piezas instaladas en el Estadio Nacional, durante los días de competencia."
+     ],
+     "piezas": [
+      {
+       "src": "img1/campeones-sin-limites/csl_ev_estadio.webp",
+       "w": 2400,
+       "h": 1172,
+       "nombre": "Cierre en la pista atlética",
+       "formato": "Estadio Nacional, 28 de agosto de 2025",
+       "alt": "Las delegaciones reunidas en la pista atlética del Estadio Nacional, con la pera inflable, las carpas araña de Ripley y las carpas de los auspiciadores al fondo."
+      },
+      {
+       "src": "img1/campeones-sin-limites/csl_ev_basquet.webp",
+       "w": 1280,
+       "h": 960,
+       "nombre": "Sede de básquetbol",
+       "formato": "Bastidores y banderas vela instalados",
+       "alt": "Cancha de básquetbol en silla de ruedas rodeada por los bastidores de marca y de auspiciadores y banderas vela de Ripley."
+      },
+      {
+       "src": "img1/campeones-sin-limites/csl_ev_tenis.webp",
+       "w": 1280,
+       "h": 960,
+       "nombre": "Sede de tenis de mesa",
+       "formato": "Bastidores de marca en uso",
+       "alt": "Partidos de tenis de mesa detrás de dos bastidores fucsia de Campeones Sin Límites."
+      },
+      {
+       "src": "img1/campeones-sin-limites/csl_ev_piscina.webp",
+       "w": 1600,
+       "h": 1200,
+       "nombre": "Sede de natación",
+       "formato": "Banderas vela y lienzos en la piscina",
+       "alt": "Piscina olímpica con banderas vela de Ripley y lienzos de Campeones Sin Límites en las tribunas."
+      },
+      {
+       "src": "img1/campeones-sin-limites/csl_ev_pera.webp",
+       "w": 1280,
+       "h": 960,
+       "nombre": "Pera inflable y carpas",
+       "formato": "Cancha exterior",
+       "alt": "Pera inflable fucsia de Campeones Sin Límites en la cancha de pasto, con las carpas araña de Ripley al fondo."
       }
      ]
     },
@@ -673,28 +730,61 @@ window.PORTAFOLIO = {
      ],
      "piezas": [
       {
-       "src": "img1/campeones-sin-limites/c_v1.webp",
-       "w": 3200,
-       "h": 489,
-       "nombre": "Franja de vagón",
-       "formato": "Atletismo",
-       "alt": "Franja de vagón. Atletismo"
-      },
-      {
-       "src": "img1/campeones-sin-limites/c_v2.webp",
-       "w": 3200,
-       "h": 489,
+       "src": "img1/campeones-sin-limites/c_vagon1.webp",
+       "w": 1778,
+       "h": 272,
        "nombre": "Franja de vagón",
        "formato": "Natación",
-       "alt": "Franja de vagón. Natación"
+       "alt": "Franja interior de vagón de Metro: retrato y foto en acción de un deportista de natación, con Campeones Sin Límites o Ripley."
       },
       {
-       "src": "img1/campeones-sin-limites/c_v3.webp",
-       "w": 3200,
-       "h": 489,
+       "src": "img1/campeones-sin-limites/c_vagon2.webp",
+       "w": 1778,
+       "h": 272,
+       "nombre": "Franja de vagón",
+       "formato": "Atletismo",
+       "alt": "Franja interior de vagón de Metro: retrato y foto en acción de un deportista de atletismo, con Campeones Sin Límites o Ripley."
+      },
+      {
+       "src": "img1/campeones-sin-limites/c_vagon3.webp",
+       "w": 1778,
+       "h": 272,
        "nombre": "Franja de vagón",
        "formato": "Tenis de mesa",
-       "alt": "Franja de vagón. Tenis de mesa"
+       "alt": "Franja interior de vagón de Metro: retrato y foto en acción de un deportista de tenis de mesa, con Campeones Sin Límites o Ripley."
+      },
+      {
+       "src": "img1/campeones-sin-limites/c_vagon4.webp",
+       "w": 1778,
+       "h": 272,
+       "nombre": "Franja de vagón",
+       "formato": "Tenis de mesa",
+       "alt": "Franja interior de vagón de Metro: retrato y foto en acción de un deportista de tenis de mesa, con Campeones Sin Límites o Ripley."
+      },
+      {
+       "src": "img1/campeones-sin-limites/c_vagon5.webp",
+       "w": 1778,
+       "h": 272,
+       "nombre": "Franja de vagón",
+       "formato": "Tiro con arco",
+       "alt": "Franja interior de vagón de Metro: retrato y foto en acción de un deportista de tiro con arco, con Campeones Sin Límites o Ripley."
+      },
+      {
+       "src": "img1/campeones-sin-limites/c_vagon6.webp",
+       "w": 1778,
+       "h": 272,
+       "nombre": "Franja de vagón",
+       "formato": "Básquetbol en silla de ruedas",
+       "alt": "Franja interior de vagón de Metro: retrato y foto en acción de un deportista de básquetbol en silla de ruedas, con Campeones Sin Límites o Ripley."
+      },
+      {
+       "src": "img1/campeones-sin-limites/c_vagon_foto.webp",
+       "w": 720,
+       "h": 1280,
+       "nombre": "Franjas instaladas",
+       "formato": "Dentro del vagón, octubre de 2025",
+       "alt": "Video dentro de un vagón de Metro recorriendo las franjas instaladas sobre las ventanas.",
+       "video": "video/csl-vagon.mp4"
       }
      ]
     },
@@ -803,7 +893,8 @@ window.PORTAFOLIO = {
    "resumen": "La juguetería Toys\"R\"Us llegó a Ripley Parque Arauco y Mall Marina. Sobre el concepto gráfico de la agencia ODN hice invitaciones, piezas de la inauguración, el torneo de Beyblade, piezas de tienda y las gift cards de Navidad.",
    "creditos": [
     "Concepto gráfico: agencia ODN.",
-    "Fotos de tienda: MacroMKT."
+    "Fotos de tienda: MacroMKT.",
+    "Fotos de la inauguración: registro del equipo de Marketing de Ripley."
    ],
    "cover": {
     "src": "img3/portadas/toys-r-us.webp",
@@ -944,14 +1035,38 @@ window.PORTAFOLIO = {
        "nombre": "Frente del arco",
        "formato": "Bienvenida",
        "alt": "Frente del arco. Bienvenida"
+      }
+     ]
+    },
+    {
+     "titulo": "La inauguración",
+     "texto": [
+      "El escenario y la gráfica del lanzamiento, ya montados y en uso."
+     ],
+     "piezas": [
+      {
+       "src": "img1/toys-r-us/tru_ev_escenario.webp",
+       "w": 1600,
+       "h": 900,
+       "nombre": "Escenario de la inauguración",
+       "formato": "Montaje terminado, la víspera de la apertura",
+       "alt": "Escenario con fondo de franjas rojas y rosadas, el logo de Toys\"R\"Us y Ripley, y el oso y la jirafa Geoffrey asomándose desde abajo; laterales con la misma gráfica."
       },
       {
-       "src": "img1/toys-r-us/tru_arco3d.webp",
-       "w": 1140,
-       "h": 597,
-       "nombre": "Arco en volumen",
-       "formato": "Vista para producción",
-       "alt": "Arco en volumen. Vista para producción"
+       "src": "img1/toys-r-us/tru_ev_inauguracion.webp",
+       "w": 1280,
+       "h": 960,
+       "nombre": "El día de la apertura",
+       "formato": "8 de noviembre de 2025",
+       "alt": "Público y prensa frente al escenario de Toys\"R\"Us durante la inauguración en Ripley Parque Arauco."
+      },
+      {
+       "src": "img1/toys-r-us/tru_ev_marina.webp",
+       "w": 1101,
+       "h": 628,
+       "nombre": "Pantalla de fachada",
+       "formato": "Mall Marina",
+       "alt": "Pantalla exterior sobre el acceso de Ripley Mall Marina con la gráfica de franjas, el oso y la jirafa Geoffrey."
       }
      ]
     },
@@ -1022,14 +1137,6 @@ window.PORTAFOLIO = {
        "nombre": "Cucurucho",
        "formato": "Troquel",
        "alt": "Cucurucho. Troquel"
-      },
-      {
-       "src": "img1/toys-r-us/t_counter.webp",
-       "w": 1600,
-       "h": 817,
-       "nombre": "Counter",
-       "formato": "Frente",
-       "alt": "Counter. Frente"
       }
      ]
     },
@@ -1125,14 +1232,6 @@ window.PORTAFOLIO = {
        "nombre": "Aviso a participantes",
        "formato": "Post",
        "alt": "Aviso a participantes. Post"
-      },
-      {
-       "src": "img1/toys-r-us/t_bbs.webp",
-       "w": 1867,
-       "h": 2400,
-       "nombre": "Aviso a suplentes",
-       "formato": "Post",
-       "alt": "Aviso a suplentes. Post"
       }
      ]
     },
@@ -1500,7 +1599,7 @@ window.PORTAFOLIO = {
       {
        "src": "img2/ventas-privadas/s_vp_02.webp",
        "w": 1600,
-       "h": 1201,
+       "h": 1200,
        "nombre": "Gift card",
        "formato": "20 × 15 cm",
        "alt": "Gift card. 20 × 15 cm"
@@ -2279,14 +2378,6 @@ window.PORTAFOLIO = {
        "alt": "Counter. 200 × 75 y 180 × 75 cm"
       },
       {
-       "src": "img3/activaciones/sh_foto.webp",
-       "w": 1600,
-       "h": 900,
-       "nombre": "Counter producido",
-       "formato": "Foto antes de instalar",
-       "alt": "Counter producido. Foto antes de instalar"
-      },
-      {
        "src": "img3/activaciones/sh_reparalab.webp",
        "w": 1080,
        "h": 1350,
@@ -2494,20 +2585,12 @@ window.PORTAFOLIO = {
        "alt": "Sticker en tienda. Foto de instalación"
       },
       {
-       "src": "img3/activaciones/s_pdv_05.webp",
-       "w": 534,
-       "h": 1362,
-       "nombre": "Atención preferencial",
-       "formato": "Vertical",
-       "alt": "Atención preferencial. Vertical"
-      },
-      {
-       "src": "img3/activaciones/s_pdv_04.webp",
-       "w": 1060,
-       "h": 531,
-       "nombre": "Atención preferencial",
-       "formato": "Versión final",
-       "alt": "Atención preferencial. Versión final"
+       "src": "img3/activaciones/s_pdv_senaletica.webp",
+       "w": 2400,
+       "h": 930,
+       "nombre": "Señalética de atención preferencial",
+       "formato": "Stickers Ø 12 cm y letrero de caja",
+       "alt": "Tres stickers circulares fucsia con pictogramas de atención preferencial y un letrero vertical que dice \"Queremos mejorar tu experiencia. Avísanos si necesitas atención preferencial.\""
       }
      ]
     }

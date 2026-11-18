@@ -368,7 +368,7 @@
     { p: 'dia-del-nino', s: 2, z: 1, tipo: 'Sistema gráfico' },
     { p: 'ventas-privadas', s: 2, z: 1, tipo: 'Sistema de piezas' },
     { p: 'activaciones', s: 4, z: 5, tipo: 'Animación' },
-    { p: 'campeones-sin-limites', s: 5, z: 1, tipo: 'Campaña en Metro' },
+    { p: 'campeones-sin-limites', s: 6, z: 1, tipo: 'Campaña en Metro' },
     { p: 'muralia', s: 3, z: 8, tipo: 'Construcción de iconos' }
   ].map(function (d) {
     var p = porSlug(d.p), sec = p && p.secciones[d.s - 1], pz = sec && sec.piezas && sec.piezas[d.z - 1];
