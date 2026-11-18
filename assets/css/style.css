@@ -436,3 +436,45 @@ ul, ol { padding: 0; list-style: none; }
 .proyecto__pie .enlace:not(.enlace--sig) span::before { content: '‹'; font-size: 14px; line-height: 1; }
 .proyecto__pie .enlace--sig span::after { content: '›'; font-size: 14px; line-height: 1; }
 .proyecto__pie .enlace:hover { background: none; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Celular: la portada calza justo con la pantalla (nov 2026) ----------
+   Sin fotos sueltas, nota corta y todo a la vista sin scroll. Dentro de cada proyecto sí se scrollea. */
+.solo-celu { display: none; }
+@media (max-width: 760px) {
+  html, body { height: 100%; }
+  body { height: 100vh; height: 100dvh; min-height: 0; overflow: hidden; }
+  .barra { padding: 8px 14px; }
+  .escritorio { flex: 1 1 auto; min-height: 0; gap: clamp(8px, 2dvh, 18px); padding: clamp(8px, 1.6dvh, 16px) 12px clamp(12px, 2.4dvh, 22px); }
+  .iconos { gap: 0; }
+  .icono { min-height: 0; padding: clamp(4px, 1dvh, 8px) 4px; gap: 5px; }
+  .mesa { flex: 1 1 auto; min-height: 0; gap: 0; }
+  .fotos { display: none; }
+  .nota { margin: 0 4px; font-size: 13px; line-height: 1.5; }
+  .nota__barra { padding: 6px 12px; }
+  .nota__texto { padding: 10px 12px 10px 0; gap: 4px; }
+  .nota__texto li { padding-left: 34px; }
+  .nota__texto li::before { width: 22px; }
+  .solo-grande { display: none; }
+  .solo-celu { display: list-item; }
+  .nota__pie { padding: 6px 12px; }
+  .nota__pie span { display: none; }
+  .rotulo { margin-top: auto; padding: 0 4px; }
+  .rotulo__sobre { margin-bottom: 8px; font-size: 12px; }
+  .rotulo h1 { font-size: min(17.5vw, 9.5dvh); }
+  .nowrap { white-space: nowrap; }
+  .ventana { top: 44px; }
+}
+@media (max-width: 760px) and (max-height: 600px) {
+  .rotulo__sobre { display: none; }
+  .icono svg { transform: scale(0.8); }
+}
+
+/* Celular: la nota se lee completa y el carrusel ocupa el espacio que queda, sin pasarse de la pantalla. */
+@media (max-width: 760px) {
+  .mesa { display: flex; flex-direction: column; gap: 14px; }
+  .nota { flex: none; }
+  .destacadas { position: relative; inset: auto; width: auto; margin: 0 4px; flex: 1 1 auto; min-height: 0; }
+  .destacadas__pantalla { flex: 1 1 auto; min-height: 90px; aspect-ratio: auto; }
+  .destacadas__pie { min-height: 46px; }
+}
+@media (max-width: 760px) and (max-height: 760px) { .destacadas { display: none; } }
