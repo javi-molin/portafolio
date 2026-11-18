@@ -477,4 +477,4 @@ ul, ol { padding: 0; list-style: none; }
   .destacadas__pantalla { flex: 1 1 auto; min-height: 90px; aspect-ratio: auto; }
   .destacadas__pie { min-height: 46px; }
 }
-@media (max-width: 760px) and (max-height: 760px) { .destacadas { display: none; } }
+@media (max-width: 760px) and (max-height: 880px) { .destacadas { display: none; } }
