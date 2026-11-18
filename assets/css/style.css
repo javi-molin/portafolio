@@ -173,7 +173,7 @@ ul, ol { padding: 0; list-style: none; }
 .sub__pestana { width: 84px; height: 14px; background: var(--acento); border: var(--borde); border-bottom: 0; border-radius: 6px 6px 0 0; }
 .sub__cuerpo { padding: 8px; background: var(--acento); border: var(--borde); border-radius: 0 6px 6px 6px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
 .sub:hover .sub__cuerpo { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--tinta); }
-.sub__cuerpo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: var(--borde); background: var(--placa); }
+.sub__cuerpo img { width: 100%; aspect-ratio: 2400 / 1644; object-fit: cover; border: var(--borde); background: var(--placa); }
 .sub__nombre { margin-top: 10px; font-weight: 600; font-size: 17px; letter-spacing: -0.02em; line-height: 1.15; }
 .sub__tipo { margin-top: 3px; font-family: var(--mono); font-size: 12px; color: var(--tinta-2); }
 

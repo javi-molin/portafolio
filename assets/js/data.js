@@ -23,7 +23,7 @@ window.PORTAFOLIO = {
     "Fotos y videos del evento: registro del equipo de Marketing de Ripley."
    ],
    "cover": {
-    "src": "assets/portadas/dia-del-nino.webp",
+    "src": "img3/portadas/dia-del-nino.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -445,7 +445,7 @@ window.PORTAFOLIO = {
     "El logo Campeones Sin Límites viene de ediciones anteriores."
    ],
    "cover": {
-    "src": "assets/portadas/campeones-sin-limites.webp",
+    "src": "img3/portadas/campeones-sin-limites.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -806,7 +806,7 @@ window.PORTAFOLIO = {
     "Fotos de tienda: MacroMKT."
    ],
    "cover": {
-    "src": "assets/portadas/toys-r-us.webp",
+    "src": "img3/portadas/toys-r-us.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1187,7 +1187,7 @@ window.PORTAFOLIO = {
     "Fotos de modelos: material de campaña de cada marca."
    ],
    "cover": {
-    "src": "assets/portadas/new-romantic.webp",
+    "src": "img3/portadas/new-romantic.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1418,7 +1418,7 @@ window.PORTAFOLIO = {
     "Fotos de modelos: material de campaña."
    ],
    "cover": {
-    "src": "assets/portadas/ventas-privadas.webp",
+    "src": "img3/portadas/ventas-privadas.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1666,7 +1666,7 @@ window.PORTAFOLIO = {
     "Fotos de producto y modelos: material de campaña."
    ],
    "cover": {
-    "src": "assets/portadas/me-fascinan-las-sandalias.webp",
+    "src": "img3/portadas/me-fascinan-las-sandalias.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1749,7 +1749,7 @@ window.PORTAFOLIO = {
     "Fotos de modelos: material de campaña."
    ],
    "cover": {
-    "src": "assets/portadas/ripley-beauty.webp",
+    "src": "img3/portadas/ripley-beauty.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -1985,7 +1985,7 @@ window.PORTAFOLIO = {
    "resumen": "Propuesta de identidad para una semana de ofertas gamer de Ripley Perú, desarrollada como mini manual. No se produjo.",
    "creditos": [],
    "cover": {
-    "src": "assets/portadas/gamer-week.webp",
+    "src": "img3/portadas/gamer-week.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -2077,7 +2077,7 @@ window.PORTAFOLIO = {
    "resumen": "Piezas de temporada que se repiten en muchos formatos: un set de íconos ilustrados para Fiestas Patrias, gift cards por categoría y campañas para otros equipos de Ripley.",
    "creditos": [],
    "cover": {
-    "src": "assets/portadas/fiestas-patrias.webp",
+    "src": "img3/portadas/fiestas-patrias.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -2252,7 +2252,7 @@ window.PORTAFOLIO = {
    "resumen": "Eventos cortos con marcas dentro de Ripley: un espacio para sneakers, la llegada de la pelota del Mundial, degustaciones, marcas nuevas y piezas chicas que ordenan la tienda.",
    "creditos": [],
    "cover": {
-    "src": "assets/portadas/activaciones.webp",
+    "src": "img3/portadas/activaciones.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -2536,7 +2536,7 @@ window.PORTAFOLIO = {
     "Fotos de producto: material de los fabricantes."
    ],
    "cover": {
-    "src": "img3/muralia/obra_01.webp",
+    "src": "img3/portadas/muralia.webp",
     "focus": "50% 50%"
    },
    "secciones": [
@@ -2987,7 +2987,7 @@ window.PORTAFOLIO = {
     "Fotos de obra y renders: Neorigen. Logotipo existente de la marca."
    ],
    "cover": {
-    "src": "img3/neorigen/web_01.webp",
+    "src": "img3/portadas/neorigen.webp",
     "focus": "50% 50%"
    },
    "secciones": [
