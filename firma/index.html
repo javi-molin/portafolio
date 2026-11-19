@@ -120,8 +120,9 @@ footer { font-family:var(--pixel); font-size:13px; color:var(--tinta-2); }
       </div>
 
       <div class="panel" id="iphone">
+        <p style="margin:0 0 14px"><button class="boton" data-copiar-mail="completa-gif">Copiar firma para Mail de Apple</button> <button class="boton boton--suave" data-copiar-mail="compacta-png">Compacta para Mail</button></p>
         <ol class="pasos">
-          <li>En el iPhone abre <b>molin.cl/firma</b> en Safari y toca <b>Copiar firma</b> en <b>Compacta · estática</b> (en pantallas chicas se lee mejor).</li>
+          <li>En el iPhone abre <b>molin.cl/firma</b> en Safari y toca <b>Copiar firma para Mail de Apple</b> (arriba de estos pasos). Esa versión ya viene al tamaño justo, porque Mail no achica las imágenes.</li>
           <li>Ve a <b>Ajustes → Apps → Mail → Firma</b>. Si tienes varias cuentas, elige <b>Por cuenta</b> y usa la de Gmail.</li>
           <li>Borra «Enviado desde mi iPhone», mantén presionado y toca <b>Pegar</b>.</li>
           <li>Si se ve desarmada, <b>agita el iPhone</b> y toca <b>Deshacer</b> en «Deshacer cambio de atributos». También sirve deslizar con tres dedos hacia la izquierda. Si agitar no hace nada, actívalo en <b>Ajustes → Accesibilidad → Tocar → Agitar para deshacer</b>.</li>
@@ -131,8 +132,9 @@ footer { font-family:var(--pixel); font-size:13px; color:var(--tinta-2); }
       </div>
 
       <div class="panel" id="mac">
+        <p style="margin:0 0 14px"><button class="boton" data-copiar-mail="completa-gif">Copiar firma para Mail de Apple</button> <button class="boton boton--suave" data-copiar-mail="compacta-png">Compacta para Mail</button></p>
         <ol class="pasos">
-          <li>Abre <b>molin.cl/firma</b> en Safari y toca <b>Copiar firma</b> en la versión que quieras.</li>
+          <li>Abre <b>molin.cl/firma</b> en Safari y toca <b>Copiar firma para Mail de Apple</b>, arriba de estos pasos. Usa ese botón y no los de más arriba: Mail muestra las otras versiones al doble de tamaño.</li>
           <li>En Mail ve a <b>Mail → Ajustes → Firmas</b>, elige tu cuenta y toca <b>+</b>. Ponle nombre.</li>
           <li><b>Desmarca</b> «Usar siempre mi tipografía predeterminada del mensaje» y pega en la columna de la derecha.</li>
           <li>Abajo, en <b>Elegir firma</b>, deja la que usarás por defecto. Cierra la ventana y envíate un correo de prueba.</li>
@@ -235,6 +237,10 @@ document.addEventListener('click', async e => {
   if (b.dataset.copiar) {
     const v = VERSIONES.find(x => x.id === b.dataset.copiar);
     avisar(b, await copiarRico(firmaHTML(v, BASE), PLANO) ? 'Copiada ✓' : 'No se pudo copiar');
+  } else if (b.dataset.copiarMail) {
+    const v = VERSIONES.find(x => x.id === b.dataset.copiarMail);
+    const vm = Object.assign({}, v, { archivo: v.archivo.replace(/\.(gif|png)$/, '-mail.$1') });
+    avisar(b, await copiarRico(firmaHTML(vm, BASE), PLANO) ? 'Copiada ✓' : 'No se pudo copiar');
   } else if (b.dataset.codigo) {
     const v = VERSIONES.find(x => x.id === b.dataset.codigo);
     avisar(b, await copiarTexto(firmaHTML(v, BASE)) ? 'Código copiado ✓' : 'No se pudo copiar');
