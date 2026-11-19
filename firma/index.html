@@ -105,6 +105,7 @@ footer { font-family:var(--pixel); font-size:13px; color:var(--tinta-2); }
           <li>Marca <b>«Insertar esta firma antes del texto citado en las respuestas»</b> para que la firma no quede escondida bajo el hilo.</li>
           <li>Baja hasta el final de la página y toca <b>Guardar cambios</b>. Envíate un correo de prueba.</li>
         </ol>
+        <div class="nota"><b>Si copiar y pegar no funciona:</b> en el editor de firma toca el ícono <b>Insertar imagen → Dirección web (URL)</b> y pega el enlace que copias con <b>Copiar enlace de la imagen</b>. Ese enlace ya es la versión a escala.</div>
         <div class="nota">No subas la imagen con el botón «Insertar imagen» de Gmail: llega como adjunto y aparece el clip en cada correo. Pegarla desde aquí la deja enlazada a molin.cl, que es más liviano y se ve igual en todas partes.</div>
       </div>
 
@@ -128,6 +129,7 @@ footer { font-family:var(--pixel); font-size:13px; color:var(--tinta-2); }
           <li>Si se ve desarmada, <b>agita el iPhone</b> y toca <b>Deshacer</b> en «Deshacer cambio de atributos». También sirve deslizar con tres dedos hacia la izquierda. Si agitar no hace nada, actívalo en <b>Ajustes → Accesibilidad → Tocar → Agitar para deshacer</b>.</li>
           <li>Sal de Ajustes y envíate un correo de prueba.</li>
         </ol>
+        <div class="nota"><b>Si copiar y pegar no funciona:</b> en Ajustes la firma de iPhone no acepta imágenes descargadas, así que usa el método de abajo: enviarte un correo con la firma desde el computador y copiarla desde ahí.</div>
         <div class="nota">Si el botón no copia bien desde Safari: desde Gmail del computador envíate un correo con la firma, ábrelo en la app Mail del iPhone, selecciona la firma completa, cópiala y pégala en Ajustes como en el paso 3.</div>
       </div>
 
@@ -139,6 +141,7 @@ footer { font-family:var(--pixel); font-size:13px; color:var(--tinta-2); }
           <li><b>Desmarca</b> «Usar siempre mi tipografía predeterminada del mensaje» y pega en la columna de la derecha.</li>
           <li>Abajo, en <b>Elegir firma</b>, deja la que usarás por defecto. Cierra la ventana y envíate un correo de prueba.</li>
         </ol>
+        <div class="nota"><b>Si copiar y pegar no funciona:</b> en la versión que quieras toca <b>Descargar a escala</b>, crea la firma en <b>Mail → Ajustes → Firmas → +</b> y arrastra el archivo descargado desde Finder a la columna de la derecha. Así queda a 480 px, no gigante. Debajo puedes escribir tu correo y teléfono como texto si quieres que se puedan pinchar.</div>
         <div class="nota">Es normal que la vista previa de Ajustes muestre un cuadro vacío o un signo de pregunta. Las imágenes se cargan desde molin.cl al escribir un correo.</div>
       </div>
 
@@ -181,6 +184,7 @@ const VERSIONES = [
 ];
 const PLANO = 'Javi Molin\nDiseñadora Integral UC\njavimolin@gmail.com · +56 9 6630 3974\nmolin.cl · linkedin.com/in/javimolin';
 
+function aEscala(f) { return f.replace(/\.(gif|png)$/, '-mail.$1'); }
 function firmaHTML(v, base) {
   const link = 'color:#121212;text-decoration:none;';
   return '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">'
@@ -200,7 +204,9 @@ VERSIONES.forEach(v => {
     + '<div class="version__vista"><p class="correo">Saludos,</p>' + firmaHTML(v, vistaBase) + '</div>'
     + '<div class="version__acciones"><button class="boton" data-copiar="' + v.id + '">Copiar firma</button>'
     + '<button class="boton boton--suave" data-codigo="' + v.id + '">Copiar código</button>'
-    + '<a class="boton boton--suave" href="' + v.archivo + '" download>Descargar ' + v.archivo.split('.').pop().toUpperCase() + '</a></div>';
+    + '<a class="boton" href="' + aEscala(v.archivo) + '" download>Descargar a escala (' + v.w + ' px)</a>'
+    + '<a class="boton boton--suave" href="' + v.archivo + '" download>Descargar alta resolución</a>'
+    + '<button class="boton boton--suave" data-url="' + aEscala(v.archivo) + '">Copiar enlace de la imagen</button></div>';
   cont.appendChild(el);
 });
 document.getElementById('plano').textContent = PLANO;
@@ -241,6 +247,8 @@ document.addEventListener('click', async e => {
     const v = VERSIONES.find(x => x.id === b.dataset.copiarMail);
     const vm = Object.assign({}, v, { archivo: v.archivo.replace(/\.(gif|png)$/, '-mail.$1') });
     avisar(b, await copiarRico(firmaHTML(vm, BASE), PLANO) ? 'Copiada ✓' : 'No se pudo copiar');
+  } else if (b.dataset.url) {
+    avisar(b, await copiarTexto(BASE + b.dataset.url) ? 'Enlace copiado ✓' : 'No se pudo copiar');
   } else if (b.dataset.codigo) {
     const v = VERSIONES.find(x => x.id === b.dataset.codigo);
     avisar(b, await copiarTexto(firmaHTML(v, BASE)) ? 'Código copiado ✓' : 'No se pudo copiar');
