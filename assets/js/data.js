@@ -3536,7 +3536,7 @@ window.PORTAFOLIO = {
     "periodo": "2022 a hoy",
     "cargo": "Diseñadora independiente",
     "lugar": "Freelance",
-    "detalle": "Branding, redes sociales y material gráfico para clientes de distintas industrias. Hoy: identidad, manual de marca, redes y sitio web para Muralia y Neorigen."
+    "detalle": "Branding, redes sociales y material gráfico para clientes de distintas industrias. Hoy: identidad, manual de marca, redes y sitio web para Muralia y Neorigen; manuales de marca y un cotizador para Skintec; gráfica de tótem y letreros para De Cosecha."
    },
    {
     "periodo": "2022 a 2023",
@@ -3576,6 +3576,11 @@ window.PORTAFOLIO = {
     "periodo": "2024",
     "titulo": "UI/UX Design",
     "lugar": "CalArts"
+   },
+    {
+    "periodo": "2005 a 2018",
+    "titulo": "Enseñanza básica y media bilingüe, Bachillerato Internacional (IB)",
+    "lugar": "Colegio Dunalastair"
    },
    {
     "periodo": "2020 a 2024",
